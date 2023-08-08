@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% block title %}Lists{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists in Python</title>
+
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link to custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Lists in Python</h1>
+
+    <!-- Introduction to Lists -->
+    <section class="mt-4">
+        <h2>Introduction to Lists</h2>
+        <p>A list in Python is an ordered collection of items which can contain any type of object, including other lists. Lists are mutable, meaning their contents can be changed after they are created.</p>
+    </section>
+
+    <!-- Ways to Create Lists -->
+    <section class="mt-4">
+        <h2>Creating Lists</h2>
+        <p>There are several ways to create lists in Python:</p>
+        <ul>
+            <li>Using square brackets: <code>fruits = ["apple", "banana", "cherry"]</code></li>
+            <li>Using the list constructor: <code>numbers = list((1, 2, 3))</code></li>
+            <li>Using list comprehension: <code>squares = [x**2 for x in range(5)]</code></li>
+        </ul>
+        <p>The most common method is using square brackets, but other methods can be useful in specific scenarios.</p>
+    </section>
+
+    <!-- List Indexing -->
+    <section class="mt-4">
+        <h2>List Indexing</h2>
+        <p>Items in a list can be accessed using their index, which starts from 0 for the first element.</p>
+        <pre><code>
+colors = ["red", "blue", "green"]
+print(colors[0])  # Outputs: red
+print(colors[2])  # Outputs: green
+        </code></pre>
+        <p>In the above example, we access the first and third elements of the list using their indices. Lists also support negative indexing, where -1 refers to the last item, -2 refers to the second last item, and so on.</p>
+    </section>
+
+    <!-- List Manipulation -->
+    <section class="mt-4">
+        <h2>List Manipulation</h2>
+        <p>Python lists come with various methods that allow you to modify and manipulate them.</p>
+
+        <h3>append()</h3>
+        <p>The <code>append()</code> method adds an item to the end of the list.</p>
+        <pre><code>
+animals = ["cat", "dog"]
+animals.append("elephant")
+print(animals)  # Outputs: ['cat', 'dog', 'elephant']
+        </code></pre>
+
+        <h3>remove()</h3>
+        <p>The <code>remove()</code> method removes the first occurrence of a value from the list.</p>
+        <pre><code>
+numbers = [1, 2, 3, 2, 4]
+numbers.remove(2)
+print(numbers)  # Outputs: [1, 3, 2, 4]
+        </code></pre>
+
+        <h3>pop()</h3>
+        <p>The <code>pop()</code> method removes and returns the item at the specified index. If no index is specified, it removes and returns the last item.</p>
+        <pre><code>
+fruits = ["apple", "banana", "cherry"]
+popped_fruit = fruits.pop(1)
+print(popped_fruit)  # Outputs: banana
+print(fruits)        # Outputs: ['apple', 'cherry']
+        </code></pre>
+
+        <!-- More methods can be added as required -->
+    </section>
+
+    <!-- Brain Teasers -->
+    <section class="mt-4">
+        <h2>Brain Teasers</h2>
+        <p>Guess the output of the following Python code snippets:</p>
+        
+        <!-- Teaser 1 -->
+        <div class="card mb-3">
+            <div class="card-header">Teaser 1</div>
+            <div class="card-body">
+                <pre><code>
+list_1 = [1, 2, 3, 4]
+list_1.append(5)
+print(list_1)
+                </code></pre>
+            </div>
+        </div>
+        
+        <!-- Teaser 2 -->
+        <div class="card mb-3">
+            <div class="card-header">Teaser 2</div>
+            <div class="card-body">
+                <pre><code>
+list_2 = ["a", "b", "c", "d"]
+popped_item = list_2.pop(2)
+print(popped_item)
+                </code></pre>
+            </div>
+        </div>
+
+        <!-- Teaser 3 -->
+        <div class="card mb-3">
+            <div class="card-header">Teaser 3</div>
+            <div class="card-body">
+                <pre><code>
+list_3 = [10, 20, 30, 40]
+list_3.remove(30)
+print(list_3)
+                </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaser Answers -->
+    <section class="mt-5">
+        <h2>Teaser Answers</h2>
+        <ol>
+            <li>Answer: <span class="answer">[1, 2, 3, 4, 5]</span></li>
+            <li>Answer: <span class="answer">c</span></li>
+            <li>Answer: <span class="answer">[10, 20, 40]</span></li>
+        </ol>
+    </section>
+</div>
+
+<!-- Link to Bootstrap JS and Popper.js (required for some Bootstrap components) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+{% endblock %}
