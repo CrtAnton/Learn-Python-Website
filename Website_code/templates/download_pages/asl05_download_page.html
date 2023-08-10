@@ -6,9 +6,10 @@
 <body>
     <h1>Downloadable Documents</h1>
     <ul>
-        {% for doc in documents %}
-        <li><a href="{{ url_for('static', filename='documents/' + doc.file) }}" download>{{ doc.name }}</a></li>
-        {% endfor %}
+        <li><a href="{{ url_for('static', filename='documents/ASL05/ASL05 - Security in Applications Day1.pptx') }}" download>ASL05 - Security in Applications Day1</a></li>
+        <li><a href="{{ url_for('static', filename='documents/ASL05/ASL05 - Security in Applications Day2.pptx') }}" download>ASL05 - Security in Applications Day2</a></li>
+        <li><a href="{{ url_for('static', filename='documents/ASL05/TEST.TXT') }}" download>Test</a></li>
+        <!-- Add more links for other files, ffs will need a loop if too many files -->
     </ul>
 </body>
 </html>

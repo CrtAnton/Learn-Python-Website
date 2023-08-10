@@ -7,14 +7,42 @@
 <body>
     <h1>Downloadable Documents</h1>
     <div class="grid-container">
-        {% for doc in documents %}
         <div class="grid-item">
-            <a href="{{ url_for('views.download_page', name=doc.name) }}">
-                <img src="{{ url_for('static', filename='images/' + doc.image) }}" alt="{{ doc.name }}">
+            <a href="{{ url_for('views.asl00_download_page') }}">
+                <img src="{{ url_for('static', filename='images/ASL_00.png') }}" alt="ASL_00">
             </a>
-            <p>{{ doc.name }}</p>
+            <p>ASL_00 Projects and KSBs</p>
         </div>
-        {% endfor %}
+        <div class="grid-item">
+            <a href="{{ url_for('views.asl01_download_page') }}">
+                <img src="{{ url_for('static', filename='images/ASL_01.jpg') }}" alt="ASL_01">
+            </a>
+            <p>ASL_01 Fundamentals of Application Support</p>
+        </div>
+        <div class="grid-item">
+            <a href="{{ url_for('views.asl02_download_page') }}">
+                <img src="{{ url_for('static', filename='images/ASL_02.png') }}" alt="ASL_02">
+            </a>
+            <p>ASL_02 Introduction to Service Management</p>
+        </div>
+        <div class="grid-item">
+            <a href="{{ url_for('views.asl03_download_page') }}">
+                <img src="{{ url_for('static', filename='images/ASL_03.jpg') }}" alt="ASL_03">
+            </a>
+            <p>ASL_03 Agile & Teamwork</p>
+        </div>
+        <div class="grid-item">
+            <a href="{{ url_for('views.asl04_download_page') }}">
+                <img src="{{ url_for('static', filename='images/ASL_04.png') }}" alt="ASL_04">
+            </a>
+            <p>ASL_04 Users, Customers and Stakeholders</p>
+        </div>
+        <div class="grid-item">
+            <a href="{{ url_for('views.asl05_download_page') }}">
+                <img src="{{ url_for('static', filename='images/ASL_05.png') }}" alt="ASL_05">
+            </a>
+            <p>ASL_05 Security in Applications</p>
+        </div>
     </div>
 </body>
 </html>

@@ -52,26 +52,50 @@ def working_with_files():
 
 @views.route("/download_page")
 def download_page():
-    documents = [
-    {'name': 'ASL_00 Projects and KSBs', 'image': 'ASL_00.png'},
-    {'name': 'ASL_01 Fundamentals of Application Support', 'image': 'ASL_01.jpg'},
-    {'name': 'ASL_02 Introduction to Service Management', 'image': 'ASL_02.png'},
-    {'name': 'ASL_03 Agile & Teamwork', 'image': 'ASL_03.jpg'},
-    {'name': 'ASL_04 Users, Customers and Stakeholders', 'image': 'ASL_04.png'},
-    {'name': 'ASL_05 Security in Applications', 'image': 'ASL_05.png'},
-    {'name': 'ASL_06 Applying security in Applications', 'image': 'ASL_06.png'},
-    {'name': 'ASL_07 DevOps in Application Support', 'image': 'ASL_07.png'},
-    {'name': 'ASL_08 Data in Application Support', 'image': 'ASL_08.png'},
-    {'name': 'ASL_09 Working with Data in Application Support', 'image': 'ASL_09.png'},
-    {'name': 'ASL_10 Testing', 'image': 'ASL_10.png'},
-    {'name': 'ASL_11 Production & Live Support', 'image': 'ASL_11.jpg'},
-    {'name': 'ASL_12 Defect Management', 'image': 'ASL_12.png'},
-    {'name': 'ASL_13 Bringing it all Together', 'image': 'ASL_13.png'},
-    {'name': 'ASL_14 Career Development & Onward Progression', 'image': 'ASL_14.png'},
-    {'name': 'ASL_15 Useful stuff', 'image': 'ASL_15.jpg'}]
-    return render_template("download_page.html", documents=documents)
+    # documents = [
+    # {'name': 'ASL_00 Projects and KSBs', 'image': 'ASL_00.png'},
+    # {'name': 'ASL_01 Fundamentals of Application Support', 'image': 'ASL_01.jpg'},
+    # {'name': 'ASL_02 Introduction to Service Management', 'image': 'ASL_02.png'},
+    # {'name': 'ASL_03 Agile & Teamwork', 'image': 'ASL_03.jpg'},
+    # {'name': 'ASL_04 Users, Customers and Stakeholders', 'image': 'ASL_04.png'},
+    # {'name': 'ASL_05 Security in Applications', 'image': 'ASL_05.png'},
+    # {'name': 'ASL_06 Applying security in Applications', 'image': 'ASL_06.png'},
+    # {'name': 'ASL_07 DevOps in Application Support', 'image': 'ASL_07.png'},
+    # {'name': 'ASL_08 Data in Application Support', 'image': 'ASL_08.png'},
+    # {'name': 'ASL_09 Working with Data in Application Support', 'image': 'ASL_09.png'},
+    # {'name': 'ASL_10 Testing', 'image': 'ASL_10.png'},
+    # {'name': 'ASL_11 Production & Live Support', 'image': 'ASL_11.jpg'},
+    # {'name': 'ASL_12 Defect Management', 'image': 'ASL_12.png'},
+    # {'name': 'ASL_13 Bringing it all Together', 'image': 'ASL_13.png'},
+    # {'name': 'ASL_14 Career Development & Onward Progression', 'image': 'ASL_14.png'},
+    # {'name': 'ASL_15 Useful stuff', 'image': 'ASL_15.jpg'}]
+    return render_template("download_page.html")
     # documents = [
     # {'name': 'ASL05 Day 1', 'file': 'ASL05/ASL05 - Security in Applications Day1.pptx'},
     # {'name': 'ASL05 Day 2', 'file': 'ASL05/ASL05 - Security in Applications Day2.pptx'},
     # {'name': 'ASL05 Day 2', 'file': 'ASL05/TEST.TXT'}]
     # return render_template("download_pages/asl05_download_page.html", documents=documents)
+
+@views.route("/download/asl00")
+def asl00_download_page():
+    return render_template("download_pages/asl00_download_page.html")
+
+@views.route("/download/asl01")
+def asl01_download_page():
+    return render_template("download_pages/asl01_download_page.html")
+
+@views.route("/download/asl02")
+def asl02_download_page():
+    return render_template("download_pages/asl02_download_page.html")
+
+@views.route("/download/asl03")
+def asl03_download_page():
+    return render_template("download_pages/asl03_download_page.html")
+
+@views.route("/download/asl04")
+def asl04_download_page():
+    return render_template("download_pages/asl04_download_page.html")
+
+@views.route("/download/asl05")
+def asl05_download_page():
+    return render_template("download_pages/asl05_download_page.html")
