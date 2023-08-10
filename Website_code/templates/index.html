@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+<!--{% extends "base.html" %}-->
 {% block title %}Home{% endblock %}
 {% block content %}
 
@@ -7,8 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Python Learning Portal</title>
-
+    <title>Learn Python with Us</title>
+    
     <!-- Link to Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,19 +18,38 @@
 <body>
 
 <div class="container mt-5">
-    <h1>Welcome to Python Learning Portal ASL Apprentice Group</h1>
+    <h1>Welcome to Learn Python with Us!</h1>
+    <p>
+        Python is an interpreted, high-level, general-purpose programming language. It is known for its simplicity and readability, making it an excellent choice for beginners and professionals alike.
+    </p>
+    <p>
+        Python can be used for a wide range of tasks, including web development, data analysis, artificial intelligence, scientific computing, and more.
+    </p>
+    
+    <!-- Buttons Row -->
+    <div class="row mt-3">
+        <div class="col-md-4">
+            <a href="{{ url_for('views.introduction') }}"><button class="btn btn-primary btn-block">Python</button></a>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary btn-block">SQL</button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary btn-block">Bash</button>
+        </div>
+    </div>
 
-    <section class="mt-4">
-        <h2>Greetings, Future Pythonistas!</h2>
-        <p>Python is an incredibly versatile programming language known for its simplicity and readability. It has a wide range of applications, from web development, data analysis, artificial intelligence, scientific computing, to simple scripting and more.</p>
+    <!-- ASL Documents Button -->
+    <div class="row mt-3">
+        <div class="col-md-4 offset-md-4">
+            <a href="{{ url_for('views.download_page') }}"><button class="btn btn-secondary btn-block">ASL Documents</button></a>
+        </div>
+    </div>
 
-        <p>Whether you're a beginner just starting out, or an experienced developer looking to expand your skill set, Python is a valuable language to learn and master.</p>
-    </section>
-
-    <section class="mt-4">
-        <h2>Website Under Construction</h2>
-        <p>Working behind the scenes to enhance our learning experience. The website is currently under construction, aiming to bring you exciting features, including a real-time code interpreter, in the near future(or never..). Stay tuned for more updates!</p>
-    </section>
+    <h2 class="mt-5">🚧 Our website is currently under construction 🚧</h2>
+    <p>
+        We are working hard to provide you with the best learning experience. Soon, we'll be introducing interactive features like a code interpreter. Stay tuned!
+    </p>
 </div>
 
 <!-- Link to Bootstrap JS and Popper.js (required for some Bootstrap components) -->
@@ -40,6 +59,7 @@
 
 </body>
 </html>
+
 
 
 {% endblock %}

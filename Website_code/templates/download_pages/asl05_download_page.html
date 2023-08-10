@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Documents</title>
+</head>
+<body>
+    <h1>Downloadable Documents</h1>
+    <ul>
+        {% for doc in documents %}
+        <li><a href="{{ url_for('static', filename='documents/' + doc.file) }}" download>{{ doc.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

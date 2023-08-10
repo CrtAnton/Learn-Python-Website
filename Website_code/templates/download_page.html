@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Documents</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='download_pages.css') }}">
+</head>
+<body>
+    <h1>Downloadable Documents</h1>
+    <div class="grid-container">
+        {% for doc in documents %}
+        <div class="grid-item">
+            <a href="{{ url_for('views.download_page', name=doc.name) }}">
+                <img src="{{ url_for('static', filename='images/' + doc.image) }}" alt="{{ doc.name }}">
+            </a>
+            <p>{{ doc.name }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

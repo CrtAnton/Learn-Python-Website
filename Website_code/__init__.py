@@ -6,7 +6,7 @@ from os import path
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'hjshjhdjah kjshkjdhjs'
+    app.config['SECRET_KEY'] = 'IamaS3cR37'
 
 
     from .views import views
