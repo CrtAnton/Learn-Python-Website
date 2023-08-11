@@ -20,11 +20,14 @@
 <div class="container mt-5">
     <h1>Welcome to ASL Learning Portal!</h1>
     <h2>
-        If anyone is interested to co-code or create content let me know
+        Notes
     </h2>
-    <p>
-       
-    </p>
+    <ol>
+        <li>ASL Documents: Documents from every lesson, at the moment just ASL_00 is populated, I will add the the documents given to us at every training soon.</li>
+        <li>SQL - Just introduction and 2 more pages, more content coming soon.</li>
+        <li>Linux - Just introduction</li>
+        <li>Python - As this was the original site created during asl06, it has some more content. I will use Craig`s python guide to create more content .</li>
+    </ol>
     
     <!-- Buttons Row -->
     <div class="row mt-3">
@@ -32,7 +35,7 @@
             <a href="{{ url_for('views.sql_introduction') }}"><button class="btn btn-primary btn-block">SQL</button></a>
         </div>
         <div class="col-md-4">
-            <button class="btn btn-primary btn-block">Linux/Bash</button>
+            <a href="{{ url_for('views.linux_introduction') }}"><button class="btn btn-primary btn-block">Linux/Bash</button></a>
         </div>
         <div class="col-md-4">
             <a href="{{ url_for('views.introduction') }}"><button class="btn btn-primary btn-block">Python</button></a>
@@ -46,9 +49,9 @@
         </div>
     </div>
 
-    <h2 class="mt-5">🚧 Our website is currently under construction 🚧</h2>
+    <h2 class="mt-5">🚧 Website is currently under construction 🚧</h2>
     <p>
-        Working hard to provide the best learning experience. Soon, introducing interactive features like a code interpreter. Stay tuned! (If anyone wants to co-code let me know.)
+        Working hard to provide the best learning experience. Soon, introducing interactive features like a code interpreter. Stay tuned! (If anyone wants to co-code or create content for lessons, let me know.)
     </p>
 </div>
 
