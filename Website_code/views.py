@@ -99,3 +99,43 @@ def asl04_download_page():
 @views.route("/download/asl05")
 def asl05_download_page():
     return render_template("download_pages/asl05_download_page.html")
+
+@views.route("/download/asl06")
+def asl06_download_page():
+    return render_template("download_pages/asl06_download_page.html")
+
+@views.route("/download/asl07")
+def asl07_download_page():
+    return render_template("download_pages/asl07_download_page.html")
+
+@views.route("/download/asl08")
+def asl08_download_page():
+    return render_template("download_pages/asl08_download_page.html")
+
+@views.route("/download/asl09")
+def asl09_download_page():
+    return render_template("download_pages/asl09_download_page.html")
+
+@views.route("/download/asl10")
+def asl10_download_page():
+    return render_template("download_pages/asl10_download_page.html")
+
+@views.route("/download/asl11")
+def asl11_download_page():
+    return render_template("download_pages/asl11_download_page.html")
+
+@views.route("/download/asl12")
+def asl12_download_page():
+    return render_template("download_pages/asl12_download_page.html")
+
+@views.route("/download/asl13")
+def asl13_download_page():
+    return render_template("download_pages/asl13_download_page.html")
+
+@views.route("/download/asl14")
+def asl14_download_page():
+    return render_template("download_pages/asl14_download_page.html")
+
+@views.route("/download/asl15")
+def asl15_download_page():
+    return render_template("download_pages/asl15_download_page.html")
