@@ -1,0 +1,48 @@
+{% extends "base_sql.html" %}
+{% block title %}Introduction{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Databases and Relational Concepts</title>
+</head>
+<body>
+    <h1>Understanding the Basics of Databases and Relational Concepts</h1>
+
+    <p>In the digital age, data plays a pivotal role in almost every aspect of our lives, from online shopping to healthcare and beyond. Databases serve as the backbone of data management, allowing us to organize, store, and retrieve information efficiently. In this lesson, we'll delve into the fundamental concepts of databases and explore the structure of relational databases, focusing on tables, rows, and columns.</p>
+
+    <h2>What are Databases and Why are They Important?</h2>
+    <p>A database is a structured collection of data that is organized and managed for easy access and manipulation. Imagine a digital repository where you store information in a systematic way to make it readily available whenever needed. Databases are crucial because they provide a structured framework for storing large volumes of data, ensuring data integrity, and enabling quick retrieval.</p>
+    <p>Databases find applications in various domains:</p>
+    <ul>
+        <li>Business: Businesses use databases to manage customer information, sales records, inventory, and financial data.</li>
+        <li>Education: Educational institutions maintain databases to store student records, course details, and exam results.</li>
+        <li>Healthcare: Hospitals rely on databases to manage patient records, medical history, and treatment plans.</li>
+        <li>E-commerce: Online retailers use databases to store product details, customer orders, and transaction history.</li>
+        <li>Social Media: Social platforms use databases to store user profiles, posts, and interactions.</li>
+    </ul>
+
+    <h2>Tables, Rows, and Columns in Relational Databases</h2>
+    <p>Relational databases are the most common type of databases used today. They organize data into tables, providing a structured way to represent and manage information. Let's break down the key components:</p>
+    <ul>
+        <li><strong>Tables:</strong> Think of a table as a virtual representation of a real-world entity. Each table is composed of rows and columns. For instance, if we're managing customer data, we might have a "Customers" table.</li>
+        <li><strong>Rows (Records):</strong> Each row in a table represents a specific instance of the entity being modeled. In the "Customers" table, each row could represent an individual customer. Each row contains a set of related information.</li>
+        <li><strong>Columns (Attributes):</strong> Columns define the different types of information that are stored in a table. Continuing with the "Customers" table example, columns could include attributes like "CustomerID," "Name," "Email," and "Phone."</li>
+    </ul>
+
+    <p><strong>Example:</strong> Imagine a library database. In this case:</p>
+    <ul>
+        <li>The "Books" table would store information about each book, with columns like "Title," "Author," and "ISBN."</li>
+        <li>Each book would be a row in the "Books" table.</li>
+        <li>The columns like "Title" and "Author" would store specific attributes of the books.</li>
+    </ul>
+
+    <p>In summary, understanding the basics of databases and the structure of relational databases is crucial for anyone entering the world of data management. Databases provide a systematic way to store and retrieve information, while tables, rows, and columns within relational databases offer a structured framework to organize data effectively. This foundation sets the stage for learning more advanced topics in database management and querying using SQL.</p>
+</body>
+</html>
+
+
+{% endblock %}

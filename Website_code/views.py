@@ -139,3 +139,19 @@ def asl14_download_page():
 @views.route("/download/asl15")
 def asl15_download_page():
     return render_template("download_pages/asl15_download_page.html")
+
+@views.route("/sql_introduction")
+def sql_introduction():
+    return render_template("sql_pages/introduction.html")
+
+@views.route("/sql_sql_fundamentals")
+def sql_sql_fundamentals():
+    return render_template("sql_pages/sql_fundamentals.html")
+
+@views.route("/sql_data_manipulation")
+def sql_data_manipulation():
+    return render_template("sql_pages/data_manipulation.html")
+
+@views.route("/linux_introduction")
+def linux_introduction():
+    return render_template("linux_pages/introduction.html")

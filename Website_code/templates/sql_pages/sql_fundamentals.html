@@ -1,0 +1,87 @@
+{% extends "base_sql.html" %}
+{% block title %}Introduction{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning SQL Fundamentals</title>
+</head>
+<body>
+    <h1>Learning SQL Fundamentals</h1>
+
+    <h2>Understanding SQL Queries</h2>
+    <p>SQL queries are used to retrieve specific data from a database. They allow you to interact with the database by instructing it to retrieve, filter, and order data based on your requirements. Let's break down the key components of a SQL query:</p>
+
+    <ul>
+        <li><code>SELECT</code> Clause: Specifies which columns you want to retrieve from a table.</li>
+        <li><code>FROM</code> Clause: Specifies the table from which you're retrieving data.</li>
+        <li><code>WHERE</code> Clause: Filters data based on specific conditions.</li>
+        <li><code>ORDER BY</code> Clause: Sorts the results in ascending or descending order.</li>
+    </ul>
+
+    <h2>Writing Simple Queries</h2>
+    <p>Consider a hypothetical database with a table named "Employees." This table contains information about employees in a company, including columns like "EmployeeID," "FirstName," "LastName," "Department," and "Salary."</p>
+
+    <h3>Example 1: Retrieve All Employee Names</h3>
+    <p>To retrieve the first and last names of all employees:</p>
+    <code>
+        SELECT FirstName, LastName<br>
+        FROM Employees;
+    </code>
+
+    <h3>Example 2: Filter Employees by Department</h3>
+    <p>To retrieve employees from the "Sales" department:</p>
+    <code>
+        SELECT FirstName, LastName<br>
+        FROM Employees<br>
+        WHERE Department = 'Sales';
+    </code>
+
+    <h3>Example 3: Sorting Employees by Salary</h3>
+    <p>To retrieve employees sorted by salary in descending order:</p>
+    <code>
+        SELECT FirstName, LastName, Salary<br>
+        FROM Employees<br>
+        ORDER BY Salary DESC;
+    </code>
+
+    <h2>Exercises: Practice Your Skills</h2>
+    <ol>
+        <li>Retrieve the names of all employees who have a salary greater than $50,000.</li>
+        <li>Retrieve the first name, last name, and department of employees from the "Marketing" department.</li>
+        <li>Retrieve the names of employees and their salaries, ordered by salary in ascending order.</li>
+        <li>Retrieve the first name, last name, and department of employees with IDs 101 and 105.</li>
+        <li>Retrieve the first name and last name of employees whose last name starts with the letter "S".</li>
+    </ol>
+
+    <h2>Exercise Solutions:</h2>
+    <p>Solutions to the exercises:</p>
+    <code>
+        1. SELECT FirstName, LastName<br>
+        &emsp;FROM Employees<br>
+        &emsp;WHERE Salary &gt; 50000;<br><br>
+
+        2. SELECT FirstName, LastName, Department<br>
+        &emsp;FROM Employees<br>
+        &emsp;WHERE Department = 'Marketing';<br><br>
+
+        3. SELECT FirstName, LastName, Salary<br>
+        &emsp;FROM Employees<br>
+        &emsp;ORDER BY Salary ASC;<br><br>
+
+        4. SELECT FirstName, LastName, Department<br>
+        &emsp;FROM Employees<br>
+        &emsp;WHERE EmployeeID IN (101, 105);<br><br>
+
+        5. SELECT FirstName, LastName<br>
+        &emsp;FROM Employees<br>
+        &emsp;WHERE LastName LIKE 'S%';
+    </code>
+</body>
+</html>
+
+
+{% endblock %}

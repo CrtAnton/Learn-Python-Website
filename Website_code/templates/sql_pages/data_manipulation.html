@@ -1,0 +1,85 @@
+{% extends "base_sql.html" %}
+{% block title %}Introduction{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Data Manipulation and Data Integrity in SQL</title>
+</head>
+<body>
+    <h1>Study Data Manipulation and Data Integrity in SQL</h1>
+
+    <h2>Data Manipulation Statements</h2>
+    <p>SQL offers three primary statements for data manipulation:</p>
+    <ul>
+        <li><code>INSERT</code> Statement: Adds new rows to a table.</li>
+        <li><code>UPDATE</code> Statement: Modifies existing data in a table.</li>
+        <li><code>DELETE</code> Statement: Removes data from a table.</li>
+    </ul>
+
+    <h3>Example: INSERT Statement</h3>
+    <p>To insert a new book into the "Books" table:</p>
+    <code>
+        INSERT INTO Books (Title, Author, PublicationYear)<br>
+        VALUES ('The Great Gatsby', 'F. Scott Fitzgerald', 1925);
+    </code>
+
+    <h3>Example: UPDATE Statement</h3>
+    <p>To update the publication year of a book:</p>
+    <code>
+        UPDATE Books<br>
+        SET PublicationYear = 2020<br>
+        WHERE Title = 'The Great Gatsby';
+    </code>
+
+    <h3>Example: DELETE Statement</h3>
+    <p>To delete a book from the table:</p>
+    <code>
+        DELETE FROM Books<br>
+        WHERE Title = 'The Great Gatsby';
+    </code>
+
+    <h2>Data Integrity and Constraints</h2>
+    <p>Data integrity ensures accuracy and consistency in databases. Constraints are rules applied to tables to enforce data integrity.</p>
+    <ul>
+        <li><strong>Primary Key Constraint:</strong> Ensures each row is uniquely identifiable.</li>
+        <li><strong>Foreign Key Constraint:</strong> Establishes relationships between tables.</li>
+        <li><strong>Unique Constraint:</strong> Enforces uniqueness for values in a column.</li>
+        <li><strong>Check Constraint:</strong> Defines conditions for data entry.</li>
+    </ul>
+
+    <h2>Exercises: Practice Your Skills</h2>
+    <ol>
+        <li>Insert a new employee into the "Employees" table.</li>
+        <li>Update the salary of an employee.</li>
+        <li>Delete employees from a specific department.</li>
+        <li>Add a unique constraint to a column.</li>
+        <li>Create a foreign key constraint between two tables.</li>
+    </ol>
+
+    <h2>Exercise Solutions:</h2>
+    <p>Solutions to the exercises:</p>
+    <code>
+        1. INSERT INTO Employees (FirstName, LastName, Department, Salary)<br>
+        &emsp;VALUES ('John', 'Doe', 'HR', 60000);<br><br>
+
+        2. UPDATE Employees<br>
+        &emsp;SET Salary = 75000<br>
+        &emsp;WHERE EmployeeID = 102;<br><br>
+
+        3. DELETE FROM Employees<br>
+        &emsp;WHERE Department = 'Sales';<br><br>
+
+        4. ALTER TABLE Employees<br>
+        &emsp;ADD CONSTRAINT UniqueEmail UNIQUE (Email);<br><br>
+
+        5. ALTER TABLE Orders<br>
+        &emsp;ADD CONSTRAINT FK_CustomerID FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID);
+    </code>
+</body>
+</html>
+
+{% endblock %}

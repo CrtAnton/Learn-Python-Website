@@ -1,0 +1,66 @@
+{% extends "base_sql.html" %}
+{% block title %}Introduction{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Understanding Linux Basics and CLI</title>
+</head>
+<body>
+    <h1>Lesson: Understanding Linux Basics and Command-Line Interface (CLI)</h1>
+
+    <p>Linux is an open-source operating system that has gained significant popularity due to its versatility, security, and customization capabilities. It serves as an alternative to proprietary operating systems like Windows or macOS. Understanding the basics of Linux and becoming proficient in using the command-line interface (CLI) can empower you to navigate and manipulate your system efficiently.</p>
+
+    <h2>What is Linux?</h2>
+    <p>Linux is a family of free and open-source operating systems based on the Unix operating system. It was created by Linus Torvalds in 1991 and has since grown into a diverse ecosystem of distributions (distros) like Ubuntu, Debian, CentOS, and more. Linux is known for its stability, security, and the ability to run on a wide range of hardware, from servers to smartphones and embedded systems.</p>
+
+    <h2>Key Features of Linux:</h2>
+    <ol>
+        <li><strong>Open Source:</strong> Linux is developed collaboratively, allowing anyone to view, modify, and distribute its source code.</li>
+        <li><strong>Security:</strong> Linux is inherently more secure due to its permission-based system and the separation of user privileges.</li>
+        <li><strong>Customizability:</strong> Users can customize every aspect of their Linux system, from the desktop environment to the kernel.</li>
+        <li><strong>Stability:</strong> Linux systems are known for their stability and uptime, making them ideal for servers and critical applications.</li>
+        <li><strong>Command-Line Interface (CLI):</strong> Linux offers a powerful command-line interface that enables users to interact with the system directly through commands.</li>
+    </ol>
+
+    <h2>Advantages of the Command-Line Interface (CLI):</h2>
+    <ol>
+        <li><strong>Efficiency:</strong> CLI allows for faster and more precise interaction with the system compared to graphical user interfaces (GUIs).</li>
+        <li><strong>Remote Access:</strong> Many Linux servers are managed remotely through SSH, which relies heavily on the CLI.</li>
+        <li><strong>Automation:</strong> CLI supports scripting and automation, streamlining repetitive tasks.</li>
+        <li><strong>Resource Efficiency:</strong> CLI consumes fewer system resources, making it suitable for resource-limited environments.</li>
+        <li><strong>Learning Curve:</strong> While it may seem intimidating at first, learning the CLI offers a deeper understanding of the system's mechanics.</li>
+    </ol>
+
+    <h2>Examples and Explanations:</h2>
+    <ol>
+        <li><strong>Navigating the File System:</strong> Use the <code>ls</code> command to list files and directories in the current folder. For instance, <code>ls /home/user</code> lists contents of the user's home directory.</li>
+        <li><strong>Creating Directories:</strong> Employ the <code>mkdir</code> command to create directories. For example, <code>mkdir Documents</code> creates a "Documents" directory.</li>
+        <li><strong>Moving Between Directories:</strong> Use <code>cd</code> to change directories. For instance, <code>cd Downloads</code> navigates to the "Downloads" directory.</li>
+        <li><strong>Copying Files:</strong> The <code>cp</code> command copies files. For example, <code>cp file.txt /tmp</code> copies "file.txt" to the "/tmp" directory.</li>
+        <li><strong>Text Editing:</strong> Try <code>vi</code> to edit text files directly from the CLI. For instance, <code>vi document.txt</code> opens "document.txt" in the <code>vi</code> editor.</li>
+    </ol>
+
+    <h2>Exercises:</h2>
+    <ol>
+        <li>List the contents of your home directory.</li>
+        <li>Create a new directory named "Projects."</li>
+        <li>Navigate to the "Documents" directory.</li>
+        <li>Copy a file named "report.doc" to the "Backup" directory.</li>
+        <li>Open the "notes.txt" file for editing using the <code>vi</code> editor.</li>
+    </ol>
+
+    <h2>Solutions:</h2>
+    <ol>
+        <li><code>ls ~</code> or <code>ls /home/yourusername</code></li>
+        <li><code>mkdir Projects</code></li>
+        <li><code>cd Documents</code></li>
+        <li><code>cp report.doc /Backup</code></li>
+        <li><code>vi notes.txt</code></li>
+    </ol>
+</body>
+</html>
+
+
+{% endblock %}
