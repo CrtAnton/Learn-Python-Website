@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Download Documents</title>
+    <title>ASL 01 Download Documents</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='downloads_pages.css') }}">
 </head>
 <body>
-    <h1>Downloadable Documents</h1>
-    <ul>
-        <li><a href="{{ url_for('static', filename='documents/ASL01/ASL_01 - Communication - Activities.docx') }}" download>ASL_01 - Communication - Activities</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL01/ASL_01 - Laws and Legislation - Activities (1).docx') }}" download>ASL_01 - Laws and Legislation - Activities</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL01/ASL_01 - Legislation Worksheet.docx') }}" download>ASL_01 - Legislation Worksheet</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL01/ASL_01 - Methodologies - Activities.docx') }}" download>ASL_01 - Methodologies - Activities</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL01/ASL_01 - Roles and Responsibilities - Activities (1).docx') }}" download>ASL_01 - Roles and Responsibilities - Activities</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL01/ASL_01 Day 1 - Introduction to ASL.pptx') }}" download>ASL_01 Day 1 - Introduction to ASL Powerpoint</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL01/ASL_01 Day 2 - Software Methodologies.pptx') }}" download>ASL_01 Day 2 - Software Methodologies Powerpoint</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL01/ASL_01 Day 3 - Roles and Responsibilities.pptx') }}" download>ASL_01 Day 3 - Roles and Responsibilities Powerpoint</a></li>
-    </ul>
+    <h1>ASL_01 Fundamentals of Application Support</h1>
+    <h2>Downloadable Documents</h2>
+    <div class="grid-container">
+        {% for doc in [('documents/ASL01/ASL_01 - Communication - Activities.docx', 'ASL_01 - Communication - Activities'),
+                       ('documents/ASL01/ASL_01 - Laws and Legislation - Activities (1).docx', 'ASL_01 - Laws and Legislation - Activities'),
+                       ('documents/ASL01/ASL_01 - Legislation Worksheet.docx', 'ASL_01 - Legislation Worksheet'),
+                       ('documents/ASL01/ASL_01 - Methodologies - Activities.docx', 'ASL_01 - Methodologies - Activities'),
+                       ('documents/ASL01/ASL_01 - Roles and Responsibilities - Activities (1).docx', 'ASL_01 - Roles and Responsibilities - Activities'),
+                       ('documents/ASL01/ASL_01 Day 1 - Introduction to ASL.pptx', 'ASL_01 Day 1 - Introduction to ASL Powerpoint'),
+                       ('documents/ASL01/ASL_01 Day 2 - Software Methodologies.pptx', 'ASL_01 Day 2 - Software Methodologies Powerpoint'),
+                       ('documents/ASL01/ASL_01 Day 3 - Roles and Responsibilities.pptx', 'ASL_01 Day 3 - Roles and Responsibilities Powerpoint')] %}
+        <div class="grid-item">
+            <a href="{{ url_for('static', filename=doc[0]) }}" download>
+                <img src="{{ url_for('static', filename='images/' + ('word_img.png' if doc[0].endswith('.docx') else 'powerpoint_img.png' if doc[0].endswith('.pptx') else 'pdf_img.png')) }}" alt="Document Image">
+                <p>{{ doc[1] }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
 </body>
 </html>

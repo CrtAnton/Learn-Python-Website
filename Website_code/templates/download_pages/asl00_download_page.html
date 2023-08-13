@@ -1,17 +1,31 @@
+{% extends "base_downloads.html" %}
+{% block title %}ASL 00 Download Documents{% endblock %}
+{% block content %}
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Download Documents</title>
+    <title>ASL 00 Download Documents</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='downloads_pages.css') }}">
 </head>
 <body>
-    <h1>Downloadable Documents</h1>
-    <ul>
-        <li><a href="{{ url_for('static', filename='documents/ASL00/ASL Project one brief.docx') }}" download>ASL Project one brief</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL00/ASL Project two brief.docx') }}" download>ASL Project two brief</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL00/ASL Project three brief.docx') }}" download>ASL Project three brief</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL00/ASL KSB breakdown.docx') }}" download>ASL KSB breakdown</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL00/BCS Level 4 Applications Support Lead Apprenticeship Knowledge Test Syllabus.pdf') }}" download>BCS Level 4 Applications Support Lead Apprenticeship Knowledge Test Syllabus</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL00/Pass and Distinction criteria for the ASL portfolio.pdf') }}" download>Pass and Distinction criteria for the ASL portfolio</a></li>
-    </ul>
+    <h1>ASL_00 Projects and KSBs</h1>
+    <h2>Downloadable Documents</h2>
+    <div class="grid-container">
+        {% for doc in [('documents/ASL00/ASL Project one brief.docx', 'ASL Project one brief'),
+                       ('documents/ASL00/ASL Project two brief.docx', 'ASL Project two brief'),
+                       ('documents/ASL00/ASL Project three brief.docx', 'ASL Project three brief'),
+                       ('documents/ASL00/ASL KSB breakdown.docx', 'ASL KSB breakdown'),
+                       ('documents/ASL00/BCS Level 4 Applications Support Lead Apprenticeship Knowledge Test Syllabus.pdf', 'BCS Level 4 Applications Support Lead Apprenticeship Knowledge Test Syllabus'),
+                       ('documents/ASL00/Pass and Distinction criteria for the ASL portfolio.pdf', 'Pass and Distinction criteria for the ASL portfolio')] %}
+        <div class="grid-item">
+            <a href="{{ url_for('static', filename=doc[0]) }}" download>
+                <img src="{{ url_for('static', filename='images/' + ('word_img.png' if doc[0].endswith('.docx') else 'pdf_img.png' if doc[0].endswith('.pdf') else 'powerpoint_img.png')) }}" alt="Document Image">
+                <p>{{ doc[1] }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
 </body>
 </html>
+{% endblock %}
