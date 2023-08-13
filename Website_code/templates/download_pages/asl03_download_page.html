@@ -16,7 +16,7 @@
                        ('documents/ASL03/ASL_03 - Belbin-team-roles-self-perception-questionnaire.docx', 'ASL_03 - Belbin-team-roles-self-perception-questionnaire'),
                        ('documents/ASL03/ASL_03 - Teamwork.docx', 'ASL_03 - Teamwork'),
                        ('documents/ASL03/ASL_03 - Agile & Teamwork 01.pptx', 'ASL_03 - Agile & Teamwork 01 Powerpoint'),
-                       ('documents/ASL03/ASL_03 - Agile & Teamwork 02.pptx', 'ASL_03 - Agile  Teamwork 02 Powerpoint'),
+                       ('documents/ASL03/ASL_03 - Agile & Teamwork 02.pptx', 'ASL_03 - Agile  Teamwork 02 Powerpoint'),] %}
         <div class="grid-item">
             <a href="{{ url_for('static', filename=doc[0]) }}" download>
                 <img src="{{ url_for('static', filename='images/' + ('word_img.png' if doc[0].endswith('.docx') else 'powerpoint_img.png' if doc[0].endswith('.pptx') else 'pdf_img.png')) }}" alt="Document Image">
