@@ -1,15 +1,29 @@
+{% extends "base_downloads.html" %}
+{% block title %}ASL 05 Download Documents{% endblock %}
+{% block content %}
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Download Documents</title>
+    <title>ASL 05 Download Documents</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='downloads_pages.css') }}">
 </head>
 <body>
-    <h1>Downloadable Documents</h1>
-    <ul>
-        <li><a href="{{ url_for('static', filename='documents/ASL05/ASL05 - Security in Applications Day1.pptx') }}" download>ASL05 - Security in Applications Day1</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL05/ASL05 - Security in Applications Day2.pptx') }}" download>ASL05 - Security in Applications Day2</a></li>
-        <li><a href="{{ url_for('static', filename='documents/ASL05/TEST.TXT') }}" download>Test</a></li>
-        <!-- Add more links for other files, ffs will need a loop if too many files -->
-    </ul>
+    <h1>ASL_05 Security in Applications</h1>
+    <h2>Downloadable Documents</h2>
+    <div class="grid-container">
+        {% for doc in [('documents/ASL05/ASL05 - Security in Applications Day1.pptx', 'ASL05 - Security in Applications Day1 Powerpoint'),
+                       ('documents/ASL05/ASL05 - Security in Applications Day2.pptx', 'ASL05 - Security in Applications Day2 Powerpoint'),] %}
+        <div class="grid-item">
+            <a href="{{ url_for('static', filename=doc[0]) }}" download>
+                <img src="{{ url_for('static', filename='images/' + ('word_img.png' if doc[0].endswith('.docx') else 'powerpoint_img.png' if doc[0].endswith('.pptx') else 'pdf_img.png')) }}" alt="Document Image">
+                <p>{{ doc[1] }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
 </body>
 </html>
+
+
+{% endblock %}

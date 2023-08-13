@@ -1,0 +1,30 @@
+{% extends "base_downloads.html" %}
+{% block title %}ASL 04 Download Documents{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASL 04 Download Documents</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='downloads_pages.css') }}">
+</head>
+<body>
+    <h1>ASL_04 Users, Customers and Stakeholders</h1>
+    <h2>Downloadable Documents</h2>
+    <div class="grid-container">
+        {% for doc in [('documents/ASL04/ASL_04 - Project Planning.docx', 'ASL_04 - Project Planning'),
+                       ('documents/ASL04/ASL_04 - Customer Journey - SC3.pptx', 'ASL_04 - Customer Journey - SC3 Powerpoint'),
+                       ('documents/ASL04/ASL_04 - Users, Customers and Stakeholders SC2.pptx', 'ASL_04 - Users, Customers and Stakeholders SC2 Powerpoint'),] %}
+        <div class="grid-item">
+            <a href="{{ url_for('static', filename=doc[0]) }}" download>
+                <img src="{{ url_for('static', filename='images/' + ('word_img.png' if doc[0].endswith('.docx') else 'powerpoint_img.png' if doc[0].endswith('.pptx') else 'pdf_img.png')) }}" alt="Document Image">
+                <p>{{ doc[1] }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
+
+{% endblock %}
