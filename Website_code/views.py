@@ -164,6 +164,10 @@ def sql_joins_and_relationships():
 def sql_subqueries_and_derived_tables():
     return render_template("sql_pages/subqueries_and_derived_tables.html")
 
+@views.route("/sql_more_resources")
+def sql_more_resources():
+    return render_template("sql_pages/more_resources.html")
+
 @views.route("/linux_introduction")
 def linux_introduction():
     return render_template("linux_pages/introduction.html")
