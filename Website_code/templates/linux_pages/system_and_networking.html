@@ -1,0 +1,78 @@
+{% extends "base_linux.html" %}
+{% block title %}System and Networking{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System and Networking</title>
+</head>
+<body>
+    <h1>Lesson: System and Networking</h1>
+
+    <p>Welcome to the seventh lesson of your Linux learning journey! In this lesson, you'll explore tools and commands that provide insights into your system's performance and networking capabilities.</p>
+
+    <h2>1. ps - View Running Processes</h2>
+    <p>The <code>ps</code> command displays information about processes running on your system. It's a useful way to see what programs are currently active.</p>
+    <p>Example:</p>
+    <pre><code>ps aux
+ps -ef</code></pre>
+    <p>In these examples, the <code>aux</code> and <code>-ef</code> options provide detailed information about all running processes.</p>
+
+    <h2>2. top, htop - Monitor System Resources</h2>
+    <p>The <code>top</code> and <code>htop</code> commands show real-time information about system resource usage, including CPU, memory, and more.</p>
+    <p>Example:</p>
+    <pre><code>top
+htop</code></pre>
+    <p>Both <code>top</code> and <code>htop</code> display a list of processes with resource usage details, updating in real-time.</p>
+
+    <h2>3. df, du - Disk Usage and Space Analysis</h2>
+    <p>The <code>df</code> command shows information about disk space usage, while the <code>du</code> command helps you analyze directory space consumption.</p>
+    <p>Example:</p>
+    <pre><code>df -h
+du -sh /home/user</code></pre>
+    <p>The <code>-h</code> flag in <code>df</code> displays sizes in human-readable format (e.g., KB, MB). The <code>-sh</code> flag in <code>du</code> summarizes and displays the size of the specified directory.</p>
+
+    <h2>4. ping - Check Network Connectivity</h2>
+    <p>The <code>ping</code> command tests network connectivity by sending packets to a remote host and receiving responses.</p>
+    <p>Example:</p>
+    <pre><code>ping www.google.com</code></pre>
+    <p>In this example, <code>www.google.com</code> is the hostname being pinged. The command provides information about the round-trip time and packet loss.</p>
+
+    <h2>5. ifconfig or ip - Network Configuration</h2>
+    <p>The <code>ifconfig</code> and <code>ip</code> commands provide information about network interfaces and their configurations.</p>
+    <p>Example:</p>
+    <pre><code>ifconfig
+ip addr show</code></pre>
+    <p>Both commands display details about network interfaces, IP addresses, and more.</p>
+
+    <h2>6. netstat, ss - Network Statistics</h2>
+    <p>The <code>netstat</code> and <code>ss</code> commands offer insights into network statistics, including open ports and active connections.</p>
+    <p>Example:</p>
+    <pre><code>netstat -tuln
+ss -tuln</code></pre>
+    <p>The <code>-tuln</code> options show TCP ports in use and listening, both for <code>netstat</code> and <code>ss</code>.</p>
+
+    <h2>Exercises:</h2>
+    <ol>
+        <li>Use <code>ps</code> to list all running processes on your system.</li>
+        <li>Monitor system resources using the <code>top</code> or <code>htop</code> command.</li>
+        <li>Check the disk space usage of your home directory with <code>df</code>.</li>
+        <li>Ping a website or server of your choice to test network connectivity.</li>
+        <li>Use <code>ifconfig</code> or <code>ip</code> to display details of your network interfaces.</li>
+        <li>List the open ports on your system using <code>netstat</code> or <code>ss</code>.</li>
+    </ol>
+
+    <h2>Solutions:</h2>
+    <ol>
+        <li><code>ps aux</code></li>
+        <li><code>top</code> or <code>htop</code></li>
+        <li><code>df -h</code></li>
+        <li><code>ping www.google.com</code></li>
+        <li><code>ifconfig</code> or <code>ip addr show</code></li>
+        <li><code>netstat -tuln</code> or <code>ss -tuln</code></li>
+    </ol>
+</body>
+</html>
+
+{% endblock %}

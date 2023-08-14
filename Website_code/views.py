@@ -196,4 +196,10 @@ def linux_basic_scripting():
 def linux_shell_environment():
     return render_template("linux_pages/shell_environment.html")
 
+@views.route("/linux_system_and_networking")
+def linux_system_and_networking():
+    return render_template("linux_pages/system_and_networking.html")
+
+
+
 
