@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Filtering, Sorting, and Combining Conditions in SQL</title>
+</head>
+<body>
+    <h1>Mastering Filtering, Sorting, and Combining Conditions in SQL</h1>
+
+    <h2>Filtering Data with Comparison Operators and Wildcards</h2>
+    <p>Comparison operators and wildcards are crucial for filtering data in SQL.</p>
+    <ul>
+        <li><strong>Comparison Operators:</strong> Use operators like <code>=</code>, <code>&gt;</code>, <code>&lt;</code>, etc. to compare values.</li>
+        <li><strong>Wildcards:</strong> Use <code>%</code> and <code>_</code> with the <code>LIKE</code> operator to match patterns within strings.</li>
+    </ul>
+
+    <h3>Example: Filtering Using Comparison Operators</h3>
+    <code>
+        SELECT FirstName, LastName<br>
+        FROM Employees<br>
+        WHERE Salary &gt; 50000;
+    </code>
+
+    <h3>Example: Filtering Using Wildcards</h3>
+    <code>
+        SELECT FirstName, LastName<br>
+        FROM Customers<br>
+        WHERE Email LIKE '%@gmail.com';
+    </code>
+
+    <h2>Combining Conditions with Logical Operators</h2>
+    <p>Logical operators help you create complex conditions by combining filters.</p>
+    <ul>
+        <li><code>AND</code>: Combines conditions that must all be true.</li>
+        <li><code>OR</code>: Combines conditions where at least one must be true.</li>
+    </ul>
+
+    <h3>Example: Combining Conditions with AND and OR</h3>
+    <code>
+        SELECT FirstName, LastName<br>
+        FROM Employees<br>
+        WHERE Department = 'Sales'<br>
+        AND Salary &gt; 60000;
+    </code>
+
+    <h2>Sorting Query Results with ORDER BY</h2>
+    <p>The <code>ORDER BY</code> clause is used to sort query results.</p>
+    <code>
+        SELECT FirstName, LastName, Salary<br>
+        FROM Employees<br>
+        ORDER BY Salary DESC;
+    </code>
+
+    <h2>Exercises: Practice Your Skills</h2>
+    <ol>
+        <li>Retrieve books with titles starting with the letter "A."</li>
+        <li>Retrieve customers whose first name is "John" or last name is "Doe."</li>
+        <li>Retrieve employees from the "HR" department with a salary less than $50,000.</li>
+        <li>Retrieve customers who have a Gmail address and are from the "Marketing" department.</li>
+        <li>Retrieve employees sorted by department in ascending order and then by salary in descending order.</li>
+    </ol>
+
+    <h2>Exercise Solutions:</h2>
+    <p>Solutions to the exercises:</p>
+    <code>
+        1. SELECT Title<br>
+        &emsp;FROM Books<br>
+        &emsp;WHERE Title LIKE 'A%';<br><br>
+
+        2. SELECT FirstName, LastName<br>
+        &emsp;FROM Customers<br>
+        &emsp;WHERE FirstName = 'John' OR LastName = 'Doe';<br><br>
+
+        3. SELECT FirstName, LastName<br>
+        &emsp;FROM Employees<br>
+        &emsp;WHERE Department = 'HR' AND Salary &lt; 50000;<br><br>
+
+        4. SELECT FirstName, LastName<br>
+        &emsp;FROM Customers<br>
+        &emsp;WHERE Email LIKE '%@gmail.com' AND Department = 'Marketing';<br><br>
+
+        5. SELECT FirstName, LastName, Department, Salary<br>
+        &emsp;FROM Employees<br>
+        &emsp;ORDER BY Department ASC, Salary DESC;
+    </code>
+</body>
+</html>

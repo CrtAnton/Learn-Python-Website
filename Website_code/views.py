@@ -152,6 +152,10 @@ def sql_sql_fundamentals():
 def sql_data_manipulation():
     return render_template("sql_pages/data_manipulation.html")
 
+@views.route("/sql_filtering_and_sorting")
+def sql_filtering_and_sorting():
+    return render_template("sql_pages/filtering_and_sorting.html")
+
 @views.route("/linux_introduction")
 def linux_introduction():
     return render_template("linux_pages/introduction.html")
