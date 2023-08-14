@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Dictionaries{% endblock %}
+{% block title %}Dictionaries in Python{% endblock %}
 {% block content %}
 
 <!DOCTYPE html>
@@ -8,11 +8,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dictionaries in Python</title>
-
-    <!-- Link to Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Link to custom CSS -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -20,113 +15,119 @@
 <div class="container mt-5">
     <h1>Dictionaries in Python</h1>
 
-    <!-- Introduction to Dictionaries -->
     <section class="mt-4">
         <h2>Introduction to Dictionaries</h2>
-        <p>A dictionary in Python is an unordered collection of data stored as a pair of a key and its corresponding value. Dictionaries are mutable, meaning their elements can be changed after they are created.</p>
-    </section>
+        <p>In Python, dictionaries are unordered collections of data in a key:value pair form. Here, 'key' is the unique identifier where we can find our data and 'value' is that data. Dictionaries offer a wide range of applications from real-time analytics to settings configurations in software applications.</p>
 
-    <!-- Creating Dictionaries -->
-    <section class="mt-4">
         <h2>Creating Dictionaries</h2>
-        <p>Dictionaries can be created using curly braces `{}` or the built-in `dict()` function.</p>
-        <pre><code>
-# Using curly braces
-person = {"name": "Alice", "age": 30}
+        <p>Dictionaries are defined by enclosing a comma-separated list of key:value pairs in curly braces `{}`. Keys are unique within a dictionary while values may not be. The values of a dictionary can be of any type, but the keys must be of an immutable data type such as strings, numbers, or tuples.</p>
+        <pre><code>person = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+}</code></pre>
 
-# Using the dict() function
-car = dict(brand="Ford", model="Mustang", year=1964)
-        </code></pre>
-        <p>In the first example, we define a dictionary `person` with keys "name" and "age" and their respective values. In the second example, we use the `dict()` function to create a dictionary for a car.</p>
+        <h2>Accessing Dictionary Values</h2>
+        <p>Values in a dictionary can be accessed by placing the key inside square brackets `[]` or with the `get()` method.</p>
+        <pre><code>print(person["name"])   # Outputs: John
+print(person.get("age"))  # Outputs: 30</code></pre>
+
+        <h2>Manipulating Dictionaries</h2>
+        <p>Dictionaries are mutable, meaning their elements can be changed even after the dictionary is created.</p>
+
+        <h3>Adding or Modifying Elements</h3>
+        <p>Items can be added or modified using the assignment operator. If the key is already present, value gets updated, otherwise a new key: value pair is added to the dictionary.</p>
+        <pre><code>person["job"] = "Engineer"
+person["name"] = "Jane"</code></pre>
+
+        <h3>Deleting Elements</h3>
+        <p>Elements can be removed using the `del` keyword, `pop()` method, `popitem()` method, or the `clear()` method.</p>
+        <pre><code>del person["age"]
+job = person.pop("job")
+last_item = person.popitem()
+person.clear()</code></pre>
+
+        <h2>Useful Dictionary Methods</h2>
+        <ul>
+            <li><strong>keys():</strong> Returns a list of all the keys in the dictionary.</li>
+            <li><strong>values():</strong> Returns a list of all the values in the dictionary.</li>
+            <li><strong>items():</strong> Returns a list of tuples, each tuple being a key-value pair.</li>
+            <li><strong>update():</strong> Updates the dictionary with elements from another dictionary or from an iterable of key:value pairs.</li>
+            <li><strong>copy():</strong> Returns a shallow copy of the dictionary.</li>
+        </ul>
+
+        <h2>Iterating Over Dictionaries</h2>
+        <p>Dictionaries can be iterated using loops. You can iterate over the keys, values, or key-value pairs.</p>
+        <pre><code>for key in person:
+    print(key, person[key])
+
+for key, value in person.items():
+    print(key, value)</code></pre>
+
+        <h2>Nested Dictionaries</h2>
+        <p>Dictionaries can contain multiple data types, including other dictionaries. This is known as nested dictionaries.</p>
+        <pre><code>team = {
+    "player1": {
+        "name": "John",
+        "age": 30
+    },
+    "player2": {
+        "name": "Jane",
+        "age": 25
+    }
+}</code></pre>
+
+        <h2>Advantages of Using Dictionaries</h2>
+        <p>Dictionaries offer a convenient way to store and retrieve data based on a key. This key-based access is usually faster than list or tuple because it's implemented as a hash table. They are especially useful when working with large amounts of data.</p>
+
+        <h2>Conclusion</h2>
+        <p>Dictionaries in Python provide a flexible and efficient way to handle and organize data. Understanding them is crucial for any Python programmer, from beginners to experts, given their widespread use in various applications.</p>
     </section>
 
-    <!-- Dictionary Manipulation -->
     <section class="mt-4">
-        <h2>Dictionary Manipulation</h2>
-        <p>Python dictionaries come with a variety of methods that allow you to modify and manipulate them.</p>
-
-        <h3>Accessing Values</h3>
-        <p>You can access the value for a particular key using square brackets or the `get()` method.</p>
-        <pre><code>
-print(person["name"])      # Outputs: Alice
-print(car.get("model"))    # Outputs: Mustang
-        </code></pre>
-
-        <h3>Adding or Updating Key-Value Pairs</h3>
-        <p>Add a new key-value pair or update the value for an existing key using square brackets.</p>
-        <pre><code>
-person["job"] = "Engineer"
-car["year"] = 2020
-        </code></pre>
-
-        <h3>Removing Key-Value Pairs</h3>
-        <p>Use the `pop()` method to remove a key-value pair by its key.</p>
-        <pre><code>
-person.pop("age")
-        </code></pre>
-
-        <!-- More methods can be added as required -->
-    </section>
-
-    <!-- Brain Teasers -->
-    <section class="mt-4">
-        <h2>Brain Teasers</h2>
-        <p>Guess the output of the following Python code snippets:</p>
-        
-        <!-- Teaser 1 -->
-        <div class="card mb-3">
-            <div class="card-header">Teaser 1</div>
-            <div class="card-body">
-                <pre><code>
-data = {"a": 1, "b": 2, "c": 3}
-print(data["b"])
-                </code></pre>
-            </div>
-        </div>
-        
-        <!-- Teaser 2 -->
-        <div class="card mb-3">
-            <div class="card-header">Teaser 2</div>
-            <div class="card-body">
-                <pre><code>
-info = {"name": "Bob", "age": 25}
-info["age"] = 30
-print(info)
-                </code></pre>
-            </div>
-        </div>
-
-        <!-- Teaser 3 -->
-        <div class="card mb-3">
-            <div class="card-header">Teaser 3</div>
-            <div class="card-body">
-                <pre><code>
-colors = {"red": "#FF0000", "green": "#008000", "blue": "#0000FF"}
-colors.pop("green")
-print(colors)
-                </code></pre>
-            </div>
-        </div>
-    </section>
-
-    <!-- Teaser Answers -->
-    <section class="mt-5">
-        <h2>Teaser Answers</h2>
+        <h2>Exercises</h2>
         <ol>
-            <li>Answer: <span class="answer">2</span></li>
-            <li>Answer: <span class="answer">{'name': 'Bob', 'age': 30}</span></li>
-            <li>Answer: <span class="answer">{'red': '#FF0000', 'blue': '#0000FF'}</span></li>
+            <li>Create a dictionary containing the names and ages of five people. Then modify the age of one person and add another person to the dictionary.</li>
+            <li>Given a dictionary of students and their grades, calculate the average grade of the class.</li>
+            <li>Write a function that merges two dictionaries.</li>
+            <li>Check if a key exists in a dictionary. If it does, print its value; otherwise, add the key with a value to the dictionary.</li>
+            <li>Iterate over a dictionary and print keys where the associated value is a list containing more than three items.</li>
+        </ol>
+    </section>
+
+    <section class="mt-5">
+        <h2>Solutions</h2>
+        <ol>
+            <li><code>people = {"John": 30, "Jane": 25, "Tom": 35, "Lucy": 28, "Mike": 40}
+people["John"] = 31
+people["Anna"] = 22</code></li>
+            <li><code>
+            students = {"John": 85, "Jane": 90, "Tom": 78, "Lucy": 92}
+average_grade = sum(students.values()) / len(students)
+            </code></li>
+            <li><code>
+            def merge_dicts(dict1, dict2):
+                dict1.update(dict2)
+                return dict1
+            </code></li>
+            <li><code>
+            key_to_check = "city"
+            if key_to_check in person:
+                print(person[key_to_check])
+            else:
+                person[key_to_check] = "Unknown"
+            </code></li>
+            <li><code>
+            data = {"A": [1, 2, 3], "B": [1, 2, 3, 4, 5], "C": [1, 2]}
+for key, value in data.items():
+    if len(value) > 3:
+        print(key)
+            </code></li>
         </ol>
     </section>
 </div>
 
-<!-- Link to Bootstrap JS and Popper.js (required for some Bootstrap components) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
-
 
 {% endblock %}
