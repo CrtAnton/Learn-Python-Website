@@ -208,6 +208,10 @@ def linux_file_permissions():
 def linux_more_resources():
     return render_template("linux_pages/more_resources.html")
 
+@views.route("/exam_mocks")
+def exam_mocks():
+    return render_template("exam_mocks.html")
+
 
 
 
