@@ -1,0 +1,52 @@
+{% extends "base_sql.html" %}
+{% block title %}Introduction{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson: Mastering Subqueries and Derived Tables in SQL</title>
+</head>
+<body>
+    <h1>Lesson: Mastering Subqueries and Derived Tables in SQL</h1>
+
+    <p>In the realm of SQL, the ability to harness the power of subqueries and derived tables is a hallmark of advanced querying. This lesson will unravel the mysteries behind subqueries and delve into the realm of derived tables, empowering you to wield these tools effectively to extract valuable insights from your data.</p>
+
+    <h2>Understanding Subqueries</h2>
+    <p>A subquery is a query embedded within another query. It can be used within the SELECT, FROM, or WHERE clauses to perform tasks such as filtering, calculations, and comparisons.</p>
+
+    <h3>Examples of Subqueries</h3>
+    <p><strong>Subquery in SELECT Clause:</strong></p>
+    <code>
+        SELECT CustomerName, (SELECT AVG(OrderAmount) FROM Orders WHERE Orders.CustomerID = Customers.CustomerID) AS AvgOrderAmount
+        FROM Customers;
+    </code>
+
+    <p><strong>Subquery in WHERE Clause:</strong></p>
+    <code>
+        SELECT ProductName
+        FROM Products
+        WHERE ProductID IN (SELECT ProductID FROM OrderDetails WHERE Quantity < 10);
+    </code>
+
+    <p><strong>Subquery in FROM Clause:</strong></p>
+    <code>
+        SELECT OrderID, TotalPrice
+        FROM (SELECT OrderID, SUM(Price * Quantity) AS TotalPrice FROM OrderDetails GROUP BY OrderID) AS SubqueryTable;
+    </code>
+
+    <h2>Exploring Derived Tables</h2>
+    <p>A derived table, also known as an inline view or subquery factoring, is a temporary result set created within a query's FROM clause. It's used to simplify complex queries and improve readability.</p>
+
+    <h3>Examples of Derived Tables</h3>
+    <p><strong>Using Derived Table to Simplify a Query:</strong></p>
+    <code>
+        SELECT Customers.CustomerName, OrderStats.OrderCount
+        FROM Customers
+        INNER JOIN (SELECT CustomerID, COUNT(*) AS OrderCount FROM Orders GROUP BY CustomerID) AS OrderStats
+        ON Customers.CustomerID = OrderStats.CustomerID;
+    </code>
+</body>
+</html>
+{% endblock %}
