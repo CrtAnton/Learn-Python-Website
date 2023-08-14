@@ -200,6 +200,14 @@ def linux_shell_environment():
 def linux_system_and_networking():
     return render_template("linux_pages/system_and_networking.html")
 
+@views.route("/linux_file_permissions")
+def linux_file_permissions():
+    return render_template("linux_pages/file_permissions.html")
+
+@views.route("/linux_more_resources")
+def linux_more_resources():
+    return render_template("linux_pages/more_resources.html")
+
 
 
 

@@ -1,0 +1,57 @@
+{% extends "base_linux.html" %}
+{% block title %}File Permissions and Security{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Permissions and Security</title>
+</head>
+<body>
+    <h1>Lesson: File Permissions and Security</h1>
+
+    <p>Welcome to the ninth lesson of your Linux learning journey! In this lesson, you'll delve into file permissions and security measures, essential concepts to keep your files safe and organized.</p>
+
+    <h2>1. Understanding the Permission System</h2>
+    <p>In Linux, each file and directory has permissions that determine who can access, modify, or execute them. Permissions are divided into three groups: owner, group, and others. Each group can have three types of permissions: read, write, and execute.</p>
+    <p>Example:</p>
+    <pre><code>ls -l
+-rw-r--r-- 1 user group 1000 Aug 01 file.txt</code></pre>
+    <p>In the above example, <code>-rw-r--r--</code> represents the permissions for the owner, group, and others. The file's owner can read and write, while both the group and others can only read.</p>
+
+    <h2>2. Using umask to Set Default Permissions</h2>
+    <p>The <code>umask</code> command allows you to set default permissions for newly created files and directories. It works by subtracting the specified permissions from the maximum permissions possible.</p>
+    <p>Example:</p>
+    <pre><code>umask 0022</code></pre>
+    <p>In this example, the umask value of <code>0022</code> ensures that newly created files will have permissions of <code>644</code> and directories will have permissions of <code>755</code>.</p>
+
+    <h2>3. Secure File Copying (rsync)</h2>
+    <p>The <code>rsync</code> command is a versatile tool for securely copying and synchronizing files and directories between different locations.</p>
+    <p>Example:</p>
+    <pre><code>rsync -avz source/ destination/</code></pre>
+    <p>In this example, the <code>-avz</code> flags maintain file permissions, copy directories recursively, and use compression for efficient data transfer.</p>
+
+    <h2>Exercises:</h2>
+    <ol>
+        <li>Create a file named <code>secret.txt</code> and set its permissions to be readable and writable only by you.</li>
+        <li>Use <code>umask</code> to set default permissions that allow read, write, and execute for the owner, and read and execute for others.</li>
+        <li>Copy a directory named <code>documents</code> from your home directory to a backup location using <code>rsync</code>.</li>
+    </ol>
+
+    <h2>Solutions:</h2>
+    <ol>
+        <li>
+            <pre><code>touch secret.txt
+chmod 600 secret.txt</code></pre>
+        </li>
+        <li>
+            <pre><code>umask 0007</code></pre>
+        </li>
+        <li>
+            <pre><code>rsync -avz ~/documents/ /backup/documents/</code></pre>
+        </li>
+    </ol>
+</body>
+</html>
+
+{% endblock %}
