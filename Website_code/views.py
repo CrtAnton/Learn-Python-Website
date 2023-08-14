@@ -160,6 +160,10 @@ def sql_filtering_and_sorting():
 def sql_joins_and_relationships():
     return render_template("sql_pages/joins_and_relationships.html")
 
+@views.route("/sql_subqueries_and_derived_tables")
+def sql_subqueries_and_derived_tables():
+    return render_template("sql_pages/subqueries_and_derived_tables.html")
+
 @views.route("/linux_introduction")
 def linux_introduction():
     return render_template("linux_pages/introduction.html")
