@@ -175,3 +175,15 @@ def sql_more_resources():
 @views.route("/linux_introduction")
 def linux_introduction():
     return render_template("linux_pages/introduction.html")
+
+@views.route("/linux_basic_commands")
+def linux_basic_commands():
+    return render_template("linux_pages/basic_commands.html")
+
+@views.route("/linux_files_and_directories_operations")
+def linux_files_and_directories_operations():
+    return render_template("linux_pages/files_and_directories_operations.html")
+
+@views.route("/linux_text_manipulation")
+def linux_text_manipulation():
+    return render_template("linux_pages/text_manipulation.html")

@@ -1,0 +1,97 @@
+{% extends "base_linux.html" %}
+{% block title %}Basic Command Line Navigation{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Command Line Navigation</title>
+</head>
+<body>
+    <h1>Lesson: Basic Command Line Navigation</h1>
+
+    <p>Welcome to the second lesson of your journey into learning Linux and mastering the command line! In this lesson, you'll delve into fundamental command line navigation commands. These commands will allow you to navigate through your system, manage files and directories, and perform essential tasks efficiently.</p>
+
+    <h2>1. ls - List Files and Directories</h2>
+    <p>The <code>ls</code> command is your window into the contents of a directory. By default, when you type <code>ls</code>, it will list the files and directories in the current directory. However, you can also specify a path to list the contents of a different directory.</p>
+    <p>Example:</p>
+    <pre><code>ls
+ls /home/user/documents</code></pre>
+
+    <h2>2. cd - Change Directory</h2>
+    <p>The <code>cd</code> command is your key to moving around the file system. It lets you change your current working directory to a specified path.</p>
+    <p>Example:</p>
+    <pre><code>cd /home/user/documents
+cd ..</code></pre>
+
+    <h2>3. pwd - Print Working Directory</h2>
+    <p>The <code>pwd</code> command is like a GPS for your terminal. It tells you where you currently are in the file system by printing the full path of your current working directory.</p>
+    <p>Example:</p>
+    <pre><code>pwd</code></pre>
+
+    <h2>4. mkdir - Create Directories</h2>
+    <p>The <code>mkdir</code> command allows you to create new directories (folders). You simply provide the name of the directory you want to create.</p>
+    <p>Example:</p>
+    <pre><code>mkdir new_folder</code></pre>
+
+    <h2>5. touch - Create Files</h2>
+    <p>The <code>touch</code> command creates empty files. Just provide the name of the file you want to create.</p>
+    <p>Example:</p>
+    <pre><code>touch new_file.txt</code></pre>
+
+    <h2>6. cp - Copy Files and Directories</h2>
+    <p>The <code>cp</code> command lets you make duplicates of files and directories. You provide the source and destination paths.</p>
+    <p>Example:</p>
+    <pre><code>cp file.txt /home/user/documents/
+cp -r folder /backup/</code></pre>
+
+    <h2>7. mv - Move or Rename Files and Directories</h2>
+    <p>The <code>mv</code> command can move files and directories to new locations or even rename them. You provide the source and destination paths.</p>
+    <p>Example:</p>
+    <pre><code>mv old_file.txt new_location/
+mv file.txt new_name.txt</code></pre>
+
+    <h2>8. rm - Remove Files and Directories</h2>
+    <p>The <code>rm</code> command is used for deleting files and directories. Be cautious when using this command, as it doesn't send items to a "recycle bin"; they are gone for good.</p>
+    <p>Example:</p>
+    <pre><code>rm file.txt
+rm -r directory/</code></pre>
+
+    <h2>9. echo - Print Text to the Terminal</h2>
+    <p>The <code>echo</code> command prints text to the terminal. It's often used for displaying messages or variables in scripts.</p>
+    <p>Example:</p>
+    <pre><code>echo "Hello, Linux!"</code></pre>
+
+    <h2>10. man - Access Manual Pages</h2>
+    <p>The <code>man</code> command provides access to manual pages for other commands. It's like an instruction manual, offering detailed information about how commands work and their available options.</p>
+    <p>Example:</p>
+    <pre><code>man ls</code></pre>
+
+    <h2>11. clear - Clear the Terminal Screen</h2>
+    <p>The <code>clear</code> command clears the terminal screen, giving you a fresh workspace.</p>
+    <p>Example:</p>
+    <pre><code>clear</code></pre>
+
+    <h2>Exercises:</h2>
+    <ol>
+        <li>List the contents of your home directory.</li>
+        <li>Navigate to your Desktop directory.</li>
+        <li>Create a new directory called "Scripts" on your Desktop.</li>
+        <li>Create a file named "notes.txt" within the "Scripts" directory.</li>
+        <li>Copy the "notes.txt" file to your home directory.</li>
+        <li>Rename the "notes.txt" file to "important_notes.txt".</li>
+    </ol>
+
+    <h2>Solutions:</h2>
+    <ol>
+        <li><code>ls ~</code></li>
+        <li><code>cd ~/Desktop</code></li>
+        <li><code>mkdir ~/Desktop/Scripts</code></li>
+        <li><code>touch ~/Desktop/Scripts/notes.txt</code></li>
+        <li><code>cp ~/Desktop/Scripts/notes.txt ~</code></li>
+        <li><code>mv ~/notes.txt ~/important_notes.txt</code></li>
+    </ol>
+</body>
+</html>
+
+{% endblock %}

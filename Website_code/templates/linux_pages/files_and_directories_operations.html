@@ -1,0 +1,109 @@
+{% extends "base_linux.html" %}
+{% block title %}File and Directory Operations{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File and Directory Operations</title>
+</head>
+<body>
+    <h1>Lesson: File and Directory Operations</h1>
+
+    <p>Welcome to the third lesson of your Linux learning journey! In this lesson, you'll explore essential file and directory operations that are fundamental for navigating and managing your system effectively.</p>
+
+    <h2>1. Understand File and Directory Structure</h2>
+    <p>Linux organizes its file system hierarchically, similar to the branches of a tree. At the very top is the root directory ("/"), from which all other directories and files stem. Directories can contain subdirectories and files, creating a structured and organized system.</p>
+    <p>Example:</p>
+    <pre><code>
+    /
+    ├── home
+    │   ├── user
+    │   │   ├── documents
+    │   │   └── pictures
+    │   └── guest
+    │       └── downloads
+    ├── var
+    ├── etc
+    ├── usr
+    └── ...
+    </code></pre>
+
+    <h2>2. Use Relative and Absolute Paths</h2>
+    <p>Paths are like addresses that help you navigate the file system. Absolute paths start from the root directory, while relative paths start from your current location. Mastering both types is essential for efficient navigation.</p>
+    <p>Example:</p>
+    <pre><code>
+    Absolute: /home/user/documents
+    Relative: documents
+    </code></pre>
+
+    <h2>3. cat, less, more - View File Contents</h2>
+    <p>These commands allow you to view the contents of a file. <code>cat</code> displays the entire file at once, <code>less</code> and <code>more</code> offer pagination and navigation.</p>
+    <p>Example:</p>
+    <pre><code>cat myfile.txt
+less largefile.txt
+more readme.txt</code></pre>
+    <p>In the example above, <code>less</code> and <code>more</code> commands allow you to scroll through the file content. Use the "Space" key to move forward and "B" key to move backward.</p>
+
+    <h2>4. head, tail - Display File Beginning or End</h2>
+    <p><code>head</code> displays the start, while <code>tail</code> displays the end of a file. Useful for quick content checks.</p>
+    <p>Example:</p>
+    <pre><code>head -n 10 log.txt
+tail -n 20 biglog.txt</code></pre>
+    <p>The flag <code>-n</code> specifies the number of lines to display. In the above examples, the first 10 lines of "log.txt" and the last 20 lines of "biglog.txt" are shown.</p>
+
+    <h2>5. grep - Search for Text Within Files</h2>
+    <p><code>grep</code> helps find text patterns within files. It shows matching lines, helping you quickly identify relevant information.</p>
+    <p>Example:</p>
+    <pre><code>grep "error" logfile.txt
+grep -r "searchterm" /path/to/search</code></pre>
+    <p>The flag <code>-r</code> enables recursive searching, allowing you to search within subdirectories. In the second example, <code>grep</code> searches for "searchterm" within the specified path.</p>
+
+    <h2>6. find - Search for Files and Directories</h2>
+    <p><code>find</code> searches for files and directories based on criteria like name, type, size, etc. It's a versatile tool for locating items.</p>
+    <p>Example:</p>
+    <pre><code>find /home/user -name "*.txt"
+find /var/log -size +1M</code></pre>
+    <p>In the first example, <code>-name "*.txt"</code> filters files with a ".txt" extension. The second example searches for files larger than 1 megabyte in size.</p>
+
+    <h2>7. chmod - Change File Permissions</h2>
+    <p><code>chmod</code> adjusts file permissions that control read, write, and execute access for owners, groups, and others.</p>
+    <p>Example:</p>
+    <pre><code>chmod u+r myfile.txt
+chmod 755 script.sh</code></pre>
+    <p>In the first example, <code>u+r</code> adds read permission for the owner. In the second example, <code>755</code> grants read, write, and execute permissions to the owner, and read and execute permissions to the group and others.</p>
+
+    <h2>8. chown - Change File Ownership</h2>
+    <p><code>chown</code> changes the ownership of files and directories. Ownership affects control and modification rights.</p>
+    <p>Example:</p>
+    <pre><code>chown user:group myfile.txt
+chown -R user:group myfolder</code></pre>
+    <p>The first example changes ownership to a specific user and group. The <code>-R</code> flag is used to perform recursive ownership change on a directory and its contents.</p>
+
+    <h2>Exercises:</h2>
+    <ol>
+        <li>Create a directory structure: "root" containing "documents" and "pictures," and "documents" containing "work" and "personal" subdirectories.</li>
+        <li>Use both relative and absolute paths to navigate to the "work" subdirectory.</li>
+        <li>View the contents of a file named "report.txt" using <code>cat</code>, <code>less</code>, and <code>more</code>.</li>
+        <li>Display the first 10 lines of the file "log.txt" using <code>head</code>.</li>
+        <li>Search for the word "error" in all text files within the "logs" directory using <code>grep</code>.</li>
+        <li>Find all files larger than 1MB in the system using <code>find</code>.</li>
+        <li>Change the permissions of a file named "data.txt" to allow read and write access to the owner using <code>chmod</code>.</li>
+        <li>Change the ownership of a directory "shared" to a user named "team" using <code>chown</code>.</li>
+    </ol>
+
+    <h2>Solutions:</h2>
+    <ol>
+        <li><code>mkdir root</code>, <code>mkdir root/documents</code>, <code>mkdir root/pictures</code>, <code>mkdir root/documents/work</code>, <code>mkdir root/documents/personal</code></li>
+        <li><code>cd root/documents/work</code></li>
+        <li><code>cat report.txt</code>, <code>less report.txt</code>, <code>more report.txt</code></li>
+        <li><code>head -n 10 log.txt</code></li>
+        <li><code>grep "error" logs/*.txt</code></li>
+        <li><code>find / -type f -size +1M</code></li>
+        <li><code>chmod u+rw data.txt</code></li>
+        <li><code>chown team shared</code></li>
+    </ol>
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "base_linux.html" %}
+{% block title %}Text Manipulation{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Manipulation</title>
+</head>
+<body>
+    <h1>Lesson: Text Manipulation</h1>
+
+    <p>Welcome to the fourth lesson of your Linux learning journey! In this lesson, you'll explore powerful text manipulation tools that enable you to work with and modify text data in various ways.</p>
+
+    <h2>1. echo - Print Text to the Terminal</h2>
+    <p>The <code>echo</code> command prints text to the terminal. It's often used for displaying messages or variables in scripts.</p>
+    <p>Example:</p>
+    <pre><code>echo "Hello, Linux!"
+echo "Today's date is $(date)"</code></pre>
+    <p>In the first example, the text "Hello, Linux!" is printed to the terminal. In the second example, <code>$(date)</code> is a special construct that inserts the current date and time into the output.</p>
+
+    <h2>2. printf - Format and Print Text</h2>
+    <p>The <code>printf</code> command allows you to format and print text with greater control. It's particularly useful for aligning columns and formatting output.</p>
+    <p>Example:</p>
+    <pre><code>printf "Name: %s\nAge: %d\n" "John" 25
+printf "Decimal: %d\nFloating-point: %.2f\n" 10 3.14159</code></pre>
+    <p>In the first example, <code>%s</code> and <code>%d</code> are placeholders for strings and integers, respectively. The values "John" and 25 are inserted in place of those placeholders. In the second example, <code>%.2f</code> specifies a floating-point number with two decimal places.</p>
+
+    <h2>3. cut, paste - Manipulate Columns of Text</h2>
+    <p>The <code>cut</code> command extracts specific columns of text from input, while the <code>paste</code> command combines lines from different files.</p>
+    <p>Example:</p>
+    <pre><code>cut -f 1,3-5 data.txt
+paste file1.txt file2.txt</code></pre>
+    <p>In the <code>cut</code> example, <code>-f 1,3-5</code> selects the first column and columns 3 to 5 from the "data.txt" file. In the <code>paste</code> example, the contents of "file1.txt" and "file2.txt" are combined side by side.</p>
+
+    <h2>4. sed, awk - Advanced Text Manipulation using Patterns and Fields</h2>
+    <p><code>sed</code> and <code>awk</code> are powerful tools for advanced text manipulation. <code>sed</code> operates on patterns and offers find-and-replace capabilities, while <code>awk</code> is perfect for processing and extracting data from structured text.</p>
+    <p>Example:</p>
+    <pre><code>sed 's/old/new/g' textfile.txt
+awk '{print $2, $1}' data.txt</code></pre>
+    <p>In the <code>sed</code> example, the command <code>s/old/new/g</code> searches for occurrences of "old" and replaces them with "new" globally. In the <code>awk</code> example, <code>{print $2, $1}</code> prints the second and first fields of each line in the "data.txt" file.</p>
+
+    <h2>Exercises:</h2>
+    <ol>
+        <li>Print the sentence "Linux is awesome!" using <code>echo</code>.</li>
+        <li>Use <code>printf</code> to display your name and age.</li>
+        <li>Extract the second and fourth columns from a file named "table.txt" using <code>cut</code>.</li>
+        <li>Combine lines from "file1.txt" and "file2.txt" with a tab delimiter using <code>paste</code>.</li>
+        <li>Replace all occurrences of "red" with "blue" in a file named "colors.txt" using <code>sed</code>.</li>
+        <li>Use <code>awk</code> to print the third and first fields of each line in a file named "data.txt".</li>
+    </ol>
+
+    <h2>Solutions:</h2>
+    <ol>
+        <li><code>echo "Linux is awesome!"</code></li>
+        <li><code>printf "Name: %s\nAge: %d\n" "YourName" 30</code></li>
+        <li><code>cut -f 2,4 table.txt</code></li>
+        <li><code>paste -d "\t" file1.txt file2.txt</code></li>
+        <li><code>sed 's/red/blue/g' colors.txt</code></li>
+        <li><code>awk '{print $3, $1}' data.txt</code></li>
+    </ol>
+</body>
+</html>
+
+{% endblock %}
