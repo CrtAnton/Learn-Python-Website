@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Functions{% endblock %}
+{% block title %}Functions in Python{% endblock %}
 {% block content %}
 
 <!DOCTYPE html>
@@ -8,115 +8,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions in Python</title>
-
-    <!-- Link to Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Link to custom CSS -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="container mt-5">
-    <h1>Functions in Python</h1>
+    <h1>Functions</h1>
 
-    <!-- Introduction to Functions -->
     <section class="mt-4">
-        <h2>Introduction to Functions</h2>
-        <p>A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.</p>
+        <h2>What are Functions?</h2>
+        <p>At its core, a function is a reusable block of code that does a specific task. Functions are fundamental to programming, promoting modularity and code reuse. In Python, functions are first-class citizens, meaning they can be passed around and used as arguments like any other object (string, int, float, list, and so on).</p>
+        
+        <h2>Why Use Functions?</h2>
+        <p>Functions offer a way to segment large and complex code bases into smaller, more manageable pieces. This makes the code easier to read, understand, and debug. It also avoids repetition and makes code reusable. Moreover, functions encapsulate logic, meaning if there's an error in a specific logic, you need to change it only in one place.</p>
+
+        <h2>Defining and Calling Functions</h2>
+        <p>In Python, functions are defined using the <code>def</code> keyword. After defining a function, it doesn't run on its own. You need to invoke or call the function to execute the code it contains.</p>
+        <pre><code>def greet():
+    print("Hello, World!")</code></pre>
+        <p>To call this function, you simply use its name followed by parentheses: <code>greet()</code>.</p>
+
+        <h2>Parameters and Return Values</h2>
+        <p>While some functions execute a task without needing any input, others might require one or more inputs to perform their task. These inputs are called parameters. Functions can also return values to be used elsewhere in the code. This is done using the <code>return</code> keyword.</p>
+        <pre><code>def add(x, y):
+    return x + y</code></pre>
+        <p>The <code>add</code> function takes two parameters and returns their sum. If called with <code>add(3, 4)</code>, it will return <strong>7</strong>.</p>
+
+        <h2>Types of Functions</h2>
+        <p>There are primarily two types of functions in Python:</p>
+        <ul>
+            <li><strong>Built-in Functions:</strong> These are pre-defined in Python and are always available for use. Examples include <code>len()</code>, <code>print()</code>, and <code>type()</code>.</li>
+            <li><strong>User-defined Functions:</strong> These are defined by the users to meet specific needs. The above examples of <code>greet()</code> and <code>add()</code> are user-defined functions.</li>
+        </ul>
+
+        <h2>Variable-length Arguments</h2>
+        <p>Sometimes, we may need to define functions that can accept any number of arguments. Python provides a way to handle this using <code>*args</code> for non-keyworded variable-length arguments and <code>**kwargs</code> for keyworded variable-length arguments.</p>
+        
+        <h2>Anonymous Functions</h2>
+        <p>Python supports the creation of anonymous functions using the <code>lambda</code> keyword. These are small, throw-away functions without a name. They are useful when you need a small function for a short period and don't want to formally define it using <code>def</code>.</p>
     </section>
 
-    <!-- Parameters vs Arguments -->
     <section class="mt-4">
-        <h2>Parameters vs. Arguments</h2>
-        <p>While defining a function, we often require inputs to provide variability to our functions. These inputs are called <strong>parameters</strong>. When we call the function and provide values for these inputs, the values are termed as <strong>arguments</strong>.</p>
-        <p><strong>Parameters</strong> are the names listed in the function definition. <strong>Arguments</strong> are the real values passed to the function when it is invoked.</p>
-        <pre><code>
-def greet_user(name):  # 'name' is a parameter
-    print(f"Hello, {name}!")
-
-greet_user("Alice")  # 'Alice' is an argument
-        </code></pre>
-        <p>In the above example, <code>name</code> is a parameter of the function <code>greet_user</code>, while "Alice" is the argument passed to the function when it's called.</p>
+        <h2>Exercises</h2>
+        <ol>
+            <li>Create a function <code>find_max</code> that takes a list of numbers and returns the maximum number.</li>
+            <li>Write a function <code>calculate_length</code> that takes a string as input and returns its length.</li>
+            <li>Develop a function <code>is_prime</code> that checks if a number is prime or not.</li>
+            <li>Design a function <code>factorial</code> that computes the factorial of a number.</li>
+            <li>Implement a lambda function that multiplies two numbers together.</li>
+        </ol>
     </section>
 
-    <!-- Returning vs Non-returning Functions -->
-    <section class="mt-4">
-        <h2>Functions: Returning vs. Non-returning</h2>
+    <section class="mt-5">
+        <h2>Solutions</h2>
+        <ol>
+            <li><code>
+            def find_max(numbers):
+                return max(numbers)
+            </code></li>
+            <li><code>
+            def calculate_length(s):
+                return len(s)
+            </code></li>
+            <li><code>
+            def is_prime(num):
+                if num <= 1:
+                    return False
+                for i in range(2, num):
+                    if num % i == 0:
+                        return False
+                return True
+            </code></li>
+            <li><code>
+            def factorial(n):
+                if n == 0:
+                    return 1
+                return n * factorial(n-1)
+            </code></li>
+            <li><code>
+            multiply = lambda x, y: x * y
+            </code></li>
+        </ol>
+    </section>
+</div>
 
-        <h3>Returning Functions</h3
-            <p>A function that sends a result back to the line from which it was called is known as a <strong>returning function</strong>. The <code>return</code> keyword is used to return a value from the function.</p>
-            <pre><code>
-    def add_numbers(a, b):
-        return a + b
-    
-    result = add_numbers(3, 4)  # The returned value 7 is stored in the variable 'result'
-    print(result)  # Outputs: 7
-            </code></pre>
-            <p>In the example above, the <code>add_numbers</code> function calculates the sum of its two parameters, <code>a</code> and <code>b</code>, and returns the result. When we call this function with arguments 3 and 4, it returns 7, which we store in the <code>result</code> variable and then print.</p>
-    
-            <h3>Non-returning Functions</h3>
-            <p>Functions that perform an action but don't send a value back to the line from which they were called are termed as <strong>non-returning functions</strong>.</p>
-            <pre><code>
-    def display_message(message):
-        print(message)
-    
-    display_message("Hello, World!")  # Outputs: Hello, World!
-            </code></pre>
-            <p>In the above code, the function <code>display_message</code> simply prints out the provided message. It doesn't return any value back to the caller.</p>
-        </section>
-    
-        <!-- Brain Teasers -->
-        <section class="mt-4">
-            <h2>Brain Teasers</h2>
-            <p>Guess the output of the following Python code snippets:</p>
-            
-            <!-- Teaser 1 -->
-            <div class="card mb-3">
-                <div class="card-header">Teaser 1</div>
-                <div class="card-body">
-                    <pre><code>
-    def multiply(x, y):
-        return x * y
-    
-    result = multiply(3, 4)
-    print(result)
-                    </code></pre>
-                </div>
-            </div>
-            
-            <!-- Teaser 2 -->
-            <div class="card mb-3">
-                <div class="card-header">Teaser 2</div>
-                <div class="card-body">
-                    <pre><code>
-    def greet():
-        print("Hi there!")
-    
-    greet()
-                    </code></pre>
-                </div>
-            </div>
-    
-        </section>
-    
-        <!-- Teaser Answers -->
-        <section class="mt-5">
-            <h2>Teaser Answers</h2>
-            <ol>
-                <li>Answer: <span class="answer">12</span></li>
-                <li>Answer: <span class="answer">Hi there!</span></li>
-            </ol>
-        </section>
-    </div>
-    
-    <!-- Link to Bootstrap JS and Popper.js (required for some Bootstrap components) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    </body>
-    </html>
-    
+</body>
+</html>
 
 {% endblock %}

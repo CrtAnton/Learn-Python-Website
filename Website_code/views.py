@@ -50,6 +50,10 @@ def solutions():
 def working_with_files():
     return render_template("python_pages/working_with_files.html")
 
+@views.route("/python_more_resources")
+def more_resources():
+    return render_template("python_pages/more_resources.html")
+
 @views.route("/download_page")
 def download_page():
     # documents = [

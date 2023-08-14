@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Lists{% endblock %}
+{% block title %}Lists in Python{% endblock %}
 {% block content %}
 
 <!DOCTYPE html>
@@ -8,141 +8,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lists in Python</title>
-
-    <!-- Link to Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Link to custom CSS -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="container mt-5">
-    <h1>Lists in Python</h1>
+    <h1>A Comprehensive Guide to Lists in Python</h1>
 
-    <!-- Introduction to Lists -->
     <section class="mt-4">
         <h2>Introduction to Lists</h2>
-        <p>A list in Python is an ordered collection of items which can contain any type of object, including other lists. Lists are mutable, meaning their contents can be changed after they are created.</p>
-    </section>
+        <p>In Python, a list is one of the most versatile and widely used data structures. It is used to store an ordered collection of items, which can be of any type. Lists are mutable, which means that the values inside a list can be changed after its creation.</p>
 
-    <!-- Ways to Create Lists -->
-    <section class="mt-4">
         <h2>Creating Lists</h2>
-        <p>There are several ways to create lists in Python:</p>
+        <p>Lists are created by placing a comma-separated sequence of items inside square brackets <code>[]</code>. Items can be of heterogeneous types, meaning you can combine strings, numbers, and other lists within a list.</p>
+        <pre><code>fruits = ["apple", "banana", "cherry"]
+numbers = [1, 2, 3, 4, 5]
+mixed_list = [1, "apple", [3, 4, 5]]</code></pre>
+
+        <h2>Accessing Elements</h2>
+        <p>You can access individual elements of a list using indexing. Python uses zero-based indexing, so the first item is indexed as 0, the second item as 1, and so on. Negative indexing starts from the end of the list: -1 refers to the last item, -2 refers to the second last item, and so on.</p>
+        <pre><code>print(fruits[1])   # Outputs: banana
+print(numbers[-1])  # Outputs: 5</code></pre>
+
+        <h2>Manipulating Lists</h2>
+        <p>Being mutable, lists in Python can be altered after their creation. You can add, remove, or modify items after the list has been defined.</p>
+
+        <h3>Adding Elements</h3>
+        <p>There are multiple ways to add elements to a list:</p>
         <ul>
-            <li>Using square brackets: <code>fruits = ["apple", "banana", "cherry"]</code></li>
-            <li>Using the list constructor: <code>numbers = list((1, 2, 3))</code></li>
-            <li>Using list comprehension: <code>squares = [x**2 for x in range(5)]</code></li>
+            <li><strong>append:</strong> Adds an item to the end of the list.</li>
+            <li><strong>insert:</strong> Inserts an item at a given position.</li>
+            <li><strong>extend:</strong> Adds multiple items from another list or iterable.</li>
         </ul>
-        <p>The most common method is using square brackets, but other methods can be useful in specific scenarios.</p>
+        <pre><code>fruits.append("grape")
+fruits.insert(1, "orange")
+fruits.extend(["kiwi", "mango"])</code></pre>
+
+        <h3>Removing Elements</h3>
+        <p>Similarly, there are various methods to remove items from a list:</p>
+        <ul>
+            <li><strong>remove:</strong> Removes the first occurrence of an item.</li>
+            <li><strong>pop:</strong> Removes the item at a specific index and returns it. By default, it removes the last item.</li>
+            <li><strong>del:</strong> Removes the item at a specific index.</li>
+            <li><strong>clear:</strong> Removes all items from the list.</li>
+        </ul>
+
+        <h3>Other Useful Methods</h3>
+        <ul>
+            <li><strong>sort:</strong> Sorts the items of the list in place.</li>
+            <li><strong>count:</strong> Returns the number of times a particular element appears in the list.</li>
+            <li><strong>index:</strong> Returns the index of the first occurrence of an item in the list.</li>
+            <li><strong>reverse:</strong> Reverses the items of the list in place.</li>
+        </ul>
+
+        <h2>List Comprehension</h2>
+        <p>List comprehension offers a shorter and more readable way to create lists. It is Python's way of implementing a well-known notation for sets as used in mathematics. It can be used to construct lists in a very natural, easy way, similar to how mathematicians describe sets.</p>
+        <pre><code>squares = [x**2 for x in range(10)]</code></pre>
+        <p>This will generate a list of squares for numbers from 0 to 9.</p>
+
+        <h2>Benefits and Use-Cases of Lists</h2>
+        <p>Lists are extremely versatile and can be used in a variety of situations. They are perfect for maintaining ordered collections of items, be it for data analysis, web development, or even game development. Their mutable nature, coupled with Python's built-in list methods, makes them ideal for data manipulation tasks.</p>
+
+        <h2>Conclusion</h2>
+        <p>Python lists are an essential data structure, and understanding them is crucial for anyone looking to become proficient in Python. Their flexibility and wide range of built-in methods make them indispensable for many programming tasks.</p>
     </section>
 
-    <!-- List Indexing -->
     <section class="mt-4">
-        <h2>List Indexing</h2>
-        <p>Items in a list can be accessed using their index, which starts from 0 for the first element.</p>
-        <pre><code>
-colors = ["red", "blue", "green"]
-print(colors[0])  # Outputs: red
-print(colors[2])  # Outputs: green
-        </code></pre>
-        <p>In the above example, we access the first and third elements of the list using their indices. Lists also support negative indexing, where -1 refers to the last item, -2 refers to the second last item, and so on.</p>
-    </section>
-
-    <!-- List Manipulation -->
-    <section class="mt-4">
-        <h2>List Manipulation</h2>
-        <p>Python lists come with various methods that allow you to modify and manipulate them.</p>
-
-        <h3>append()</h3>
-        <p>The <code>append()</code> method adds an item to the end of the list.</p>
-        <pre><code>
-animals = ["cat", "dog"]
-animals.append("elephant")
-print(animals)  # Outputs: ['cat', 'dog', 'elephant']
-        </code></pre>
-
-        <h3>remove()</h3>
-        <p>The <code>remove()</code> method removes the first occurrence of a value from the list.</p>
-        <pre><code>
-numbers = [1, 2, 3, 2, 4]
-numbers.remove(2)
-print(numbers)  # Outputs: [1, 3, 2, 4]
-        </code></pre>
-
-        <h3>pop()</h3>
-        <p>The <code>pop()</code> method removes and returns the item at the specified index. If no index is specified, it removes and returns the last item.</p>
-        <pre><code>
-fruits = ["apple", "banana", "cherry"]
-popped_fruit = fruits.pop(1)
-print(popped_fruit)  # Outputs: banana
-print(fruits)        # Outputs: ['apple', 'cherry']
-        </code></pre>
-
-        <!-- More methods can be added as required -->
-    </section>
-
-    <!-- Brain Teasers -->
-    <section class="mt-4">
-        <h2>Brain Teasers</h2>
-        <p>Guess the output of the following Python code snippets:</p>
-        
-        <!-- Teaser 1 -->
-        <div class="card mb-3">
-            <div class="card-header">Teaser 1</div>
-            <div class="card-body">
-                <pre><code>
-list_1 = [1, 2, 3, 4]
-list_1.append(5)
-print(list_1)
-                </code></pre>
-            </div>
-        </div>
-        
-        <!-- Teaser 2 -->
-        <div class="card mb-3">
-            <div class="card-header">Teaser 2</div>
-            <div class="card-body">
-                <pre><code>
-list_2 = ["a", "b", "c", "d"]
-popped_item = list_2.pop(2)
-print(popped_item)
-                </code></pre>
-            </div>
-        </div>
-
-        <!-- Teaser 3 -->
-        <div class="card mb-3">
-            <div class="card-header">Teaser 3</div>
-            <div class="card-body">
-                <pre><code>
-list_3 = [10, 20, 30, 40]
-list_3.remove(30)
-print(list_3)
-                </code></pre>
-            </div>
-        </div>
-    </section>
-
-    <!-- Teaser Answers -->
-    <section class="mt-5">
-        <h2>Teaser Answers</h2>
+        <h2>Exercises</h2>
         <ol>
-            <li>Answer: <span class="answer">[1, 2, 3, 4, 5]</span></li>
-            <li>Answer: <span class="answer">c</span></li>
-            <li>Answer: <span class="answer">[10, 20, 40]</span></li>
+            <li>Create a list of numbers from 1 to 10 and use list comprehension to generate a new list containing the square of each number.</li>
+            <li>Given a list of strings, generate a new list that contains only those strings that start with the letter 'a'.</li>
+            <li>Write a function that takes a list and returns a new list with duplicate values removed.</li>
+            <li>Find the intersection of two lists, meaning the elements that are common in both lists.</li>
+            <li>Using a list comprehension, generate a list of numbers from 1 to 100 that are divisible by 5.</li>
+        </ol>
+    </section>
+
+    <section class="mt-5">
+        <h2>Solutions</h2>
+        <ol>
+            <li><code>squared = [x**2 for x in range(1, 11)]</code></li>
+            <li><code>strings = ["apple", "banana", "avocado", "grape"]
+start_with_a = [s for s in strings if s[0] == 'a']</code></li>
+            <li><code>
+            def remove_duplicates(lst):
+                return list(set(lst))
+            </code></li>
+            <li><code>
+            list1 = [1, 2, 3, 4, 5]
+            list2 = [4, 5, 6, 7, 8]
+            intersection = [value for value in list1 if value in list2]
+            </code></li>
+            <li><code>divisible_by_5 = [x for x in range(1, 101) if x % 5 == 0]</code></li>
         </ol>
     </section>
 </div>
 
-<!-- Link to Bootstrap JS and Popper.js (required for some Bootstrap components) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-</html>
-
-
+</body
 {% endblock %}
