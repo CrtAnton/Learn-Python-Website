@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Decision Making{% endblock %}
+{% block title %}Decision Making in Python{% endblock %}
 {% block content %}
 
 <!DOCTYPE html>
@@ -8,11 +8,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decision Making in Python</title>
-
-    <!-- Link to Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Link to custom CSS -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -20,136 +15,77 @@
 <div class="container mt-5">
     <h1>Decision Making in Python</h1>
 
-    <!-- if statement section -->
     <section class="mt-4">
-        <h2>The <code>if</code> Statement</h2>
-        <p>The <code>if</code> statement is used for conditional execution. It tests an expression for truthiness and executes a block of code only if the expression evaluates to <code>True</code>.</p>
-        <pre><code>
-if condition:
-    # code to execute if condition is True
-        </code></pre>
-        <p>Example:</p>
-        <pre><code>
-age = 18
-if age >= 18:
-    print("You are eligible to vote.")
-        </code></pre>
+        <h2>If Statement</h2>
+        <p>The <code>if</code> statement is used to test a condition. If the condition is true, the code inside the if block will run.</p>
+        <pre><code>age = 17
+if age < 18:
+    print("You are a minor.")</code></pre>
+        <p>This will output: <strong>You are a minor.</strong> if the age is less than 18.</p>
+
+        <h2>If-Else Statement</h2>
+        <p>The <code>if-else</code> statement tests a condition and executes the code inside the if block if the condition is true. Otherwise, it runs the code inside the else block.</p>
+        <pre><code>age = 20
+if age < 18:
+    print("You are a minor.")
+else:
+    print("You are an adult.")</code></pre>
+        <p>Given the age above, this will output: <strong>You are an adult.</strong></p>
+
+        <h2>If-Elif-Else Statement</h2>
+        <p>The <code>if-elif-else</code> statement can be used to test multiple conditions. It goes through each condition until one is found to be true. If none are true, the else block is executed.</p>
+        <pre><code>score = 85
+if score >= 90:
+    print("Grade A")
+elif score >= 80:
+    print("Grade B")
+elif score >= 70:
+    print("Grade C")
+else:
+    print("Grade D")</code></pre>
+        <p>Given the score above, this will output: <strong>Grade B</strong></p>
     </section>
 
-    <!-- if-else statement section -->
     <section class="mt-4">
-        <h2>The <code>if-else</code> Statement</h2>
-        <p>The <code>if-else</code> statement provides an alternative block of code to execute if the condition in the <code>if</code> statement evaluates to <code>False</code>.</p>
-        <pre><code>
-if condition:
-    # code to execute if condition is True
-else:
-    # code to execute if condition is False
-        </code></pre>
-        <p>Example:</p>
-        <pre><code>
-age = 16
-if age >= 18:
-    print("You are eligible to vote.")
-else:
-    print("Sorry, you are not eligible to vote yet.")
-        </code></pre>
-    </section>
-
-    <!-- if-elif-else statement section -->
-    <section class="mt-4">
-        <h2>The <code>if-elif-else</code> Statement</h2>
-        <p>The <code>if-elif-else</code> statement allows for multiple conditions to be checked in sequence. If a condition in an <code>elif</code> (short for "else if") block is met, its associated code block is executed. If none of the conditions are met, the code in the <code>else</code> block is executed.</p>
-        <pre><code>
-if condition1:
-    # code to execute if condition1 is True
-elif condition2:
-    # code to execute if condition2 is True
-else:
-    # code to execute if none of the conditions are True
-        </code></pre>
-        <p>Example:</p>
-        <pre><code>
-grade = 85
-if grade >= 90:
-    print("You got an A!")
-elif grade >= 80:
-    print("You got a B!")
-else:
-    print("You need to study harder.")
-        </code></pre>
-    </section>
-
-    <!-- Brain teasers -->
-    <section class="mt-4">
-        <h2>Brain Teasers</h2>
-        <p>Guess the output of the following Python code snippets:</p>
-        
-        <!-- Teaser 1 -->
-        <div class="card mb-3">
-            <div class="card-header">Teaser 1</div>
-            <div class="card-body">
-                <pre><code>
-x = 10
-if x > 5:
-    print("x is large.")
-if x < 15:
-    print("x is medium.")
-                </code></pre>
-            </div>
-        </div>
-        
-        <!-- Teaser 2 -->
-        <div class="card mb-3">
-            <div class="card-header">Teaser 2</div>
-            <div class="card-body">
-                <pre><code>
-y = 15
-if y > 10:
-    print("A")
-elif y > 20:
-    print("B")
-else:
-    print("C")
-                </code></pre>
-            </div>
-        </div>
-        
-        <!-- Teaser 3 -->
-        <div class="card mb-3">
-            <div class="card-header">Teaser 3</div>
-            <div class="card-body">
-                <pre><code>
-z = 20
-if z < 15:
-    print("1")
-elif z < 25:
-    print("2")
-else:
-    print("3")
-                </code></pre>
-            </div>
-        </div>
-    </section>
-
-    <!-- Teaser Answers -->
-    <section class="mt-5">
-        <h2>Teaser Answers</h2>
+        <h2>Exercises</h2>
         <ol>
-            <li>Answer: <span class="answer">x is large. x is medium.</span></li>
-            <li>Answer: <span class="answer">A</span></li>
-            <li>Answer: <span class="answer">2</span></li>
+            <li>Write an if statement that prints "Even" if a number is even and "Odd" otherwise.</li>
+            <li>Given a variable called <code>temperature</code>, write an if-else statement that prints "It's hot!" if the temperature is above 30 and "It's cold!" otherwise.</li>
+            <li>Write an if-elif-else statement that prints "Child", "Teen", or "Adult" based on the value of an <code>age</code> variable.</li>
+        </ol>
+    </section>
+
+    <section class="mt-5">
+        <h2>Solutions</h2>
+        <ol>
+            <li><code>
+            number = 4  # Example number
+            if number % 2 == 0:
+                print("Even")
+            else:
+                print("Odd")
+            </code></li>
+            <li><code>
+            temperature = 25  # Example temperature
+            if temperature > 30:
+                print("It's hot!")
+            else:
+                print("It's cold!")
+            </code></li>
+            <li><code>
+            age = 15  # Example age
+            if age <= 12:
+                print("Child")
+            elif age <= 18:
+                print("Teen")
+            else:
+                print("Adult")
+            </code></li>
         </ol>
     </section>
 </div>
 
-<!-- Link to Bootstrap JS and Popper.js (required for some Bootstrap components) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
-
 
 {% endblock %}

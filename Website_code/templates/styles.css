@@ -21,5 +21,9 @@ pre {
 }
 
 code {
-    color: #d9534f;
+    background-color: #282c34;
+    color: #61afef;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
 }
