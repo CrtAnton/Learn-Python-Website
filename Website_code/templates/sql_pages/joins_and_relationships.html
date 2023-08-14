@@ -1,0 +1,72 @@
+{% extends "base_sql.html" %}
+{% block title %}Introduction{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Joins and Table Relationships in SQL</title>
+</head>
+<body>
+    <h1>Lesson: Exploring Joins and Table Relationships in SQL</h1>
+
+    <p>In the world of databases, understanding how to combine data from multiple tables is a crucial skill. This lesson will take you on a journey through different types of table relationships and the various types of joins available in SQL. By the end of this lesson, you'll be equipped with the knowledge to effectively retrieve and consolidate data from related tables.</p>
+
+    <h2>Understanding Table Relationships</h2>
+    <p>In a relational database, tables are often related to each other through keys, which establish connections between rows. There are three main types of table relationships:</p>
+    <ul>
+        <li><strong>One-to-One Relationship:</strong> In this type of relationship, each row in one table corresponds to exactly one row in another table. For example, a "Person" table may have a corresponding "Passport" table where each person has a unique passport.</li>
+        <li><strong>One-to-Many Relationship:</strong> In this relationship, each row in one table can be related to multiple rows in another table, but each row in the second table corresponds to only one row in the first table. For instance, a "Department" table may be related to an "Employee" table, where each department has many employees.</li>
+        <li><strong>Many-to-Many Relationship:</strong> This type of relationship involves multiple rows in each table being related to multiple rows in another table. It's often implemented using a junction table. For instance, a "Student" table could be related to a "Course" table, with a junction table "Student_Course" managing the relationships.</li>
+    </ul>
+
+    <h2>Different Types of Joins</h2>
+    <p>To retrieve data from related tables, SQL provides various types of joins:</p>
+    <ul>
+        <li><strong>INNER JOIN:</strong> This join returns only the matching rows from both tables. It's useful when you want to retrieve data that exists in both tables.</li>
+        <li><strong>LEFT JOIN (or LEFT OUTER JOIN):</strong> This join returns all rows from the left table and the matching rows from the right table. If there's no match, NULL values are returned from the right table.</li>
+        <li><strong>RIGHT JOIN (or RIGHT OUTER JOIN):</strong> This join is the opposite of the LEFT JOIN. It returns all rows from the right table and the matching rows from the left table.</li>
+        <li><strong>FULL JOIN (or FULL OUTER JOIN):</strong> This join returns all rows from both tables, with NULL values in the columns where there's no match.</li>
+    </ul>
+
+    <h2>Examples of Joins</h2>
+    <p>Let's consider a scenario with two tables: "Orders" and "Customers."</p>
+
+    <h3>Example 1: INNER JOIN</h3>
+    <p>To retrieve a list of orders along with their corresponding customer information:</p>
+    <code>
+        SELECT Orders.OrderID, Customers.CustomerName
+        FROM Orders
+        INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+    </code>
+
+    <h3>Example 2: LEFT JOIN</h3>
+    <p>To retrieve all customers and the orders they have placed (including customers with no orders):</p>
+    <code>
+        SELECT Customers.CustomerName, Orders.OrderID
+        FROM Customers
+        LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+    </code>
+
+    <h3>Example 3: RIGHT JOIN</h3>
+    <p>To retrieve all orders and their corresponding customer information (including orders with no matching customers):</p>
+    <code>
+        SELECT Orders.OrderID, Customers.CustomerName
+        FROM Orders
+        RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+    </code>
+
+    <h3>Example 4: FULL JOIN</h3>
+    <p>To retrieve all customers and all orders, combining the information:</p>
+    <code>
+        SELECT Customers.CustomerName, Orders.OrderID
+        FROM Customers
+        FULL JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
+    </code>
+</body>
+</html>
+
+
+{% endblock %}

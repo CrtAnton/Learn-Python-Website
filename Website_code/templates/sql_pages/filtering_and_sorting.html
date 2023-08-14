@@ -1,21 +1,24 @@
+{% extends "base_sql.html" %}
+{% block title %}Introduction{% endblock %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mastering Filtering, Sorting, and Combining Conditions in SQL</title>
+    <title>Lesson: Mastering Filtering, Sorting, and Combining Conditions in SQL</title>
+
 </head>
 <body>
     <h1>Mastering Filtering, Sorting, and Combining Conditions in SQL</h1>
 
+    <p>Filtering and sorting data are essential skills when working with databases. In this lesson, we'll delve into the world of SQL operators and wildcards, teaching you how to filter data effectively, combine conditions using logical operators, and sort query results for better readability.</p>
+
     <h2>Filtering Data with Comparison Operators and Wildcards</h2>
-    <p>Comparison operators and wildcards are crucial for filtering data in SQL.</p>
-    <ul>
-        <li><strong>Comparison Operators:</strong> Use operators like <code>=</code>, <code>&gt;</code>, <code>&lt;</code>, etc. to compare values.</li>
-        <li><strong>Wildcards:</strong> Use <code>%</code> and <code>_</code> with the <code>LIKE</code> operator to match patterns within strings.</li>
-    </ul>
+    <p>Comparison operators allow you to compare values and make decisions based on the results. SQL supports common comparison operators such as <code>=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, and <code>&lt;=</code>. Additionally, wildcards like <code>%</code> and <code>_</code> are used in combination with the <code>LIKE</code> operator to match patterns within strings.</p>
 
     <h3>Example: Filtering Using Comparison Operators</h3>
+    <p>Suppose you have an "Employees" table with a "Salary" column. To retrieve employees with a salary greater than $50,000:</p>
     <code>
         SELECT FirstName, LastName<br>
         FROM Employees<br>
@@ -23,6 +26,7 @@
     </code>
 
     <h3>Example: Filtering Using Wildcards</h3>
+    <p>Imagine you have a "Customers" table with an "Email" column. To retrieve customers with Gmail addresses:</p>
     <code>
         SELECT FirstName, LastName<br>
         FROM Customers<br>
@@ -30,11 +34,7 @@
     </code>
 
     <h2>Combining Conditions with Logical Operators</h2>
-    <p>Logical operators help you create complex conditions by combining filters.</p>
-    <ul>
-        <li><code>AND</code>: Combines conditions that must all be true.</li>
-        <li><code>OR</code>: Combines conditions where at least one must be true.</li>
-    </ul>
+    <p>Logical operators (<code>AND</code>, <code>OR</code>, <code>NOT</code>) help you create complex conditions by combining multiple filters.</p>
 
     <h3>Example: Combining Conditions with AND and OR</h3>
     <code>
@@ -45,7 +45,7 @@
     </code>
 
     <h2>Sorting Query Results with ORDER BY</h2>
-    <p>The <code>ORDER BY</code> clause is used to sort query results.</p>
+    <p>The <code>ORDER BY</code> clause is used to sort query results in ascending (<code>ASC</code>) or descending (<code>DESC</code>) order.</p>
     <code>
         SELECT FirstName, LastName, Salary<br>
         FROM Employees<br>
@@ -62,7 +62,6 @@
     </ol>
 
     <h2>Exercise Solutions:</h2>
-    <p>Solutions to the exercises:</p>
     <code>
         1. SELECT Title<br>
         &emsp;FROM Books<br>
@@ -74,7 +73,7 @@
 
         3. SELECT FirstName, LastName<br>
         &emsp;FROM Employees<br>
-        &emsp;WHERE Department = 'HR' AND Salary &lt; 50000;<br><br>
+        &emsp;WHERE Department = 'HR' AND Salary < 50000;<br><br>
 
         4. SELECT FirstName, LastName<br>
         &emsp;FROM Customers<br>
@@ -86,3 +85,6 @@
     </code>
 </body>
 </html>
+
+
+{% endblock %}

@@ -156,6 +156,10 @@ def sql_data_manipulation():
 def sql_filtering_and_sorting():
     return render_template("sql_pages/filtering_and_sorting.html")
 
+@views.route("/sql_joins_and_relationships")
+def sql_joins_and_relationships():
+    return render_template("sql_pages/joins_and_relationships.html")
+
 @views.route("/linux_introduction")
 def linux_introduction():
     return render_template("linux_pages/introduction.html")
