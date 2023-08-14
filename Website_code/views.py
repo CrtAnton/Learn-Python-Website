@@ -187,3 +187,13 @@ def linux_files_and_directories_operations():
 @views.route("/linux_text_manipulation")
 def linux_text_manipulation():
     return render_template("linux_pages/text_manipulation.html")
+
+@views.route("/linux_basic_scripting")
+def linux_basic_scripting():
+    return render_template("linux_pages/basic_scripting.html")
+
+@views.route("/linux_shell_environment")
+def linux_shell_environment():
+    return render_template("linux_pages/shell_environment.html")
+
+

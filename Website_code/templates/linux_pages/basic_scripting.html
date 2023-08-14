@@ -1,0 +1,102 @@
+{% extends "base_linux.html" %}
+{% block title %}Basic Scripting{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Scripting</title>
+</head>
+<body>
+    <h1>Lesson: Basic Scripting</h1>
+
+    <p>Welcome to the fifth lesson of your Linux learning journey! In this lesson, you'll discover the basics of scripting, a powerful skill that enables you to automate tasks and create custom functionalities.</p>
+
+    <h2>1. Variables and Data Types</h2>
+    <p>Variables are like containers that hold different types of data. In scripts, you can use variables to store and manipulate information.</p>
+    <p>Example:</p>
+    <pre><code>name="John"
+age=25
+greeting="Hello, $name!"
+echo $greeting</code></pre>
+    <p>In the above example, the variable <code>name</code> holds the value "John," and <code>age</code> holds the value 25. The variable <code>greeting</code> combines the string "Hello, " with the value of the <code>name</code> variable.</p>
+
+    <h2>2. Arithmetic Operations</h2>
+    <p>You can perform arithmetic operations using script variables. Linux supports addition, subtraction, multiplication, division, and more.</p>
+    <p>Example:</p>
+    <pre><code>x=10
+y=5
+sum=$((x + y))
+echo "Sum: $sum"</code></pre>
+    <p>In this example, the variables <code>x</code> and <code>y</code> hold the values 10 and 5. The <code>sum</code> variable stores the result of the addition, and the <code>$((...))</code> syntax calculates the sum of <code>x</code> and <code>y</code>.</p>
+
+    <h2>3. Conditional Statements (if, elif, else)</h2>
+    <p>Conditional statements help your script make decisions. Using <code>if</code>, <code>elif</code>, and <code>else</code> constructs, your script can execute different commands based on conditions.</p>
+    <p>Example:</p>
+    <pre><code>age=18
+if [ $age -ge 18 ]; then
+    echo "You're an adult."
+else
+    echo "You're a minor."
+fi</code></pre>
+    <p>In this example, the script checks if the <code>age</code> variable is greater than or equal to 18. Depending on the result, it outputs whether the person is an adult or a minor.</p>
+
+    <h2>4. Loops (for, while)</h2>
+    <p>Loops help you repeat commands multiple times. The <code>for</code> loop iterates over a range of values, while the <code>while</code> loop continues executing as long as a condition is true.</p>
+    <p>Example:</p>
+    <pre><code>for i in 1 2 3; do
+    echo "Number: $i"
+done
+
+counter=0
+while [ $counter -lt 5 ]; do
+    echo "Count: $counter"
+    counter=$((counter + 1))
+done</code></pre>
+    <p>The <code>for</code> loop iterates over the values 1, 2, and 3, and the <code>while</code> loop continues as long as the <code>counter</code> variable is less than 5. Inside the <code>while</code> loop, the <code>counter</code> is incremented by 1 in each iteration.</p>
+
+    <h2>Scripting with vi Editor</h2>
+    <p>The <code>vi</code> editor is a versatile tool for creating and editing scripts. To start, type <code>vi script.sh</code> in the terminal, where "script.sh" is the name of your script file.</p>
+    <p>Inside <code>vi</code>:</p>
+    <pre><code>i (for Insert Mode)
+# Your script content here
+[ESC] (to exit Insert Mode)
+:wq (to save and exit)</code></pre>
+    <p>Use the "i" key to enter Insert Mode, where you can type your script. Press [ESC] to exit Insert Mode. To save and exit, type ":wq" and press [Enter].</p>
+
+    <h2>Exercises:</h2>
+    <ol>
+        <li>Create a script that calculates and prints the area of a rectangle.</li>
+        <li>Write a script that checks if a given number is even or odd.</li>
+        <li>Use a loop to print numbers from 1 to 10.</li>
+    </ol>
+
+    <h2>Solutions:</h2>
+    <ol>
+        <li>
+            <pre><code>#!/bin/bash
+length=5
+width=3
+area=$((length * width))
+echo "Area of rectangle: $area"</code></pre>
+        </li>
+        <li>
+            <pre><code>#!/bin/bash
+number=7
+if [ $((number % 2)) -eq 0 ]; then
+    echo "Even"
+else
+    echo "Odd"
+fi</code></pre>
+        </li>
+        <li>
+            <pre><code>#!/bin/bash
+for i in {1..10}; do
+    echo $i
+done</code></pre>
+        </li>
+    </ol>
+</body>
+</html>
+
+{% endblock %}

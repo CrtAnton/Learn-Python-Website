@@ -1,0 +1,53 @@
+{% extends "base_linux.html" %}
+{% block title %}Shell Environment{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shell Environment</title>
+</head>
+<body>
+    <h1>Lesson: Shell Environment</h1>
+
+    <p>Welcome to the sixth lesson of your Linux learning journey! In this lesson, you'll dive into the shell environment and learn about environment variables, command history, and useful shortcuts to enhance your Linux experience.</p>
+
+    <h2>1. Environment Variables</h2>
+    <p>Environment variables are like settings that affect how your shell and programs work. They store information such as paths to important directories, configuration options, and more.</p>
+    <p>Example:</p>
+    <pre><code>echo $HOME
+echo $PATH</code></pre>
+    <p>In this example, <code>$HOME</code> represents your home directory, and <code>$PATH</code> holds a list of directories where the shell searches for executable files.</p>
+
+    <h2>2. Command History and Shortcuts</h2>
+    <p>The shell keeps track of the commands you've typed. You can access your command history using the arrow keys or specific shortcuts.</p>
+    <p>Example:</p>
+    <pre><code>history
+!! (repeats the last command)
+!5 (repeats command number 5)</code></pre>
+    <p>The <code>history</code> command shows your command history. The <code>!!</code> shortcut repeats the last command, and <code>!5</code> repeats the command numbered 5 in your history.</p>
+
+    <h2>3. Aliases</h2>
+    <p>Aliases are custom shortcuts for commands or command combinations. They help you create simpler and quicker ways to execute frequently used commands.</p>
+    <p>Example:</p>
+    <pre><code>alias ll='ls -l'
+alias update='sudo apt update && sudo apt upgrade'</code></pre>
+    <p>In this example, the alias <code>ll</code> is a shorthand for <code>ls -l</code>, which lists files with detailed information. The alias <code>update</code> combines two commands to update and upgrade packages.</p>
+
+    <h2>Exercises:</h2>
+    <ol>
+        <li>Print the value of the <code>$USER</code> environment variable.</li>
+        <li>Use the <code>history</code> command to view your recent command history.</li>
+        <li>Create an alias called <code>gd</code> that navigates to your desktop directory.</li>
+    </ol>
+
+    <h2>Solutions:</h2>
+    <ol>
+        <li><code>echo $USER</code></li>
+        <li><code>history</code></li>
+        <li><code>alias gd='cd ~/Desktop'</code></li>
+    </ol>
+</body>
+</html>
+
+{% endblock %}
