@@ -1,4 +1,6 @@
 from flask import Blueprint, render_template
+from Website_code.templates.questions.questions1 import questions
+
 
 views = Blueprint("views", __name__)
 
@@ -214,20 +216,20 @@ def exam_mocks():
 
 @views.route('/questions_1')
 def questions_1():
-    return render_template("questions/questions1.html")
+    return render_template("questions/questions1.html", questions=questions[0])
 
 @views.route('/questions_2')
 def questions_2():
-    return render_template("questions/questions2.html")
+    return render_template("questions/questions2.html", questions=questions[1])
 
 @views.route('/questions_3')
 def questions_3():
-    return render_template("questions/questions3.html")
+    return render_template("questions/questions3.html", questions=questions[2])
 
 @views.route('/questions_4')
 def questions_4():
-    return render_template("questions/questions4.html")
+    return render_template("questions/questions4.html", questions=questions[3])
 
 @views.route('/questions_5')
 def questions_5():
-    return render_template("questions/questions5.html")
+    return render_template("questions/questions5.html", questions=questions[4])

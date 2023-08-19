@@ -1,0 +1,17 @@
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.correct {
+    background-color: rgb(85, 209, 85);
+}
+.wrong {
+    background-color: orange;
+}

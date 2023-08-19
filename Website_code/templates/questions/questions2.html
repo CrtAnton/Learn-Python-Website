@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='quiz_style.css') }}">
+    <title>Trivia Quiz</title>
+</head>
+<body>
+    <div class="card">
+        <div class="question">
+            <!-- Javascript will populate this area -->
+        </div>
+        <div class="options">
+            <!-- Javascript will populate this area -->
+        </div>
+        <div class="navigation">
+            <button onclick="prevQuestion()">Previous</button>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        let currentQuestion = 0;
+        const questions = {{ questions | tojson }};
+        
+        function displayQuestion() {
+            const question = questions[currentQuestion];
+            const questionDiv = document.querySelector('.question');
+            const optionsDiv = document.querySelector('.options');
+
+            questionDiv.innerHTML = question.question;
+            optionsDiv.innerHTML = '';
+
+            question.options.forEach(option => {
+                const button = document.createElement('button');
+                button.innerText = option;
+                button.addEventListener('click', () => checkAnswer(option));
+                optionsDiv.appendChild(button);
+            });
+        }
+
+        function checkAnswer(selected) {
+            const correctAnswer = questions[currentQuestion].answer;
+            const optionsDiv = document.querySelector('.options');
+            const buttons = optionsDiv.querySelectorAll('button');
+
+            buttons.forEach(button => {
+                if (button.innerText === correctAnswer) {
+                    button.classList.add('correct');
+                } else if (button.innerText === selected && selected !== correctAnswer) {
+                    button.classList.add('wrong');
+                }
+            });
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            if (currentQuestion >= questions.length) currentQuestion = 0;
+            displayQuestion();
+        }
+
+        function prevQuestion() {
+            currentQuestion--;
+            if (currentQuestion < 0) currentQuestion = questions.length - 1;
+            displayQuestion();
+        }
+
+        displayQuestion();
+    </script>
+</body>
+</html>

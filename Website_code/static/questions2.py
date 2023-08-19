@@ -1,4 +1,4 @@
-questions = [
+questions1 = [
     {
         'question': 'What does the term "SLM" stand for in applications support?',
         'options': ['Support Level Management', 'Service Lifecycle Monitoring', 'Service Level Management', 'System Log Maintenance'],
