@@ -212,8 +212,22 @@ def linux_more_resources():
 def exam_mocks():
     return render_template("exam_mocks.html")
 
-@views.route('/question/<int:number>')
-def question(number):
-    return render_template(f'questions/question{number}.html')
+@views.route('/questions_1')
+def questions_1():
+    return render_template("questions/questions1.html")
 
+@views.route('/questions_2')
+def questions_2():
+    return render_template("questions/questions2.html")
 
+@views.route('/questions_3')
+def questions_3():
+    return render_template("questions/questions3.html")
+
+@views.route('/questions_4')
+def questions_4():
+    return render_template("questions/questions4.html")
+
+@views.route('/questions_5')
+def questions_5():
+    return render_template("questions/questions5.html")
