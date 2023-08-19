@@ -1,1 +1,17 @@
-<h1>Under construction</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Home</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+        <a href="{{ url_for('question', number=1) }}"><button>Question 1</button></a>
+        <a href="{{ url_for('question', number=2) }}"><button>Question 2</button></a>
+        <a href="{{ url_for('question', number=3) }}"><button>Question 3</button></a>
+        <a href="{{ url_for('question', number=4) }}"><button>Question 4</button></a>
+        <a href="{{ url_for('question', number=5) }}"><button>Question 5</button></a>
+    </div>
+</body>
+</html>

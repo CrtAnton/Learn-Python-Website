@@ -212,6 +212,8 @@ def linux_more_resources():
 def exam_mocks():
     return render_template("exam_mocks.html")
 
-
+@views.route('/question/<int:number>')
+def question(number):
+    return render_template(f'questions/question{number}.html')
 
 
