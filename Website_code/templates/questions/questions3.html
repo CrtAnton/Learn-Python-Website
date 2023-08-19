@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='quiz_style.css') }}">
-    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Quiz 3</title>
 </head>
 <body>
-    <div class="card">
-        <div class="question">
-            <!-- Javascript will populate this area -->
-        </div>
-        <div class="options">
-            <!-- Javascript will populate this area -->
-        </div>
-        <div class="navigation">
-            <button onclick="prevQuestion()">Previous</button>
-            <button onclick="nextQuestion()">Next</button>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4">
+            <div class="question h4 mb-4">
+                <!-- js here -->
+            </div>
+            <div class="options">
+                <!-- js here -->
+            </div>
+            <div class="navigation mt-4 d-flex justify-content-between">
+                <button class="btn btn-primary" onclick="prevQuestion()">Previous</button>
+                <button class="btn btn-primary" onclick="nextQuestion()">Next</button>
+            </div>
         </div>
     </div>
 
@@ -35,6 +38,7 @@
             question.options.forEach(option => {
                 const button = document.createElement('button');
                 button.innerText = option;
+                button.className = 'btn btn-secondary btn-lg btn-block mb-2';
                 button.addEventListener('click', () => checkAnswer(option));
                 optionsDiv.appendChild(button);
             });
@@ -47,9 +51,9 @@
 
             buttons.forEach(button => {
                 if (button.innerText === correctAnswer) {
-                    button.classList.add('correct');
+                    button.classList.add('btn-success');
                 } else if (button.innerText === selected && selected !== correctAnswer) {
-                    button.classList.add('wrong');
+                    button.classList.add('btn-danger');
                 }
             });
         }
