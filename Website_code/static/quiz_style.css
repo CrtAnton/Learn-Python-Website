@@ -1,17 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .card {
     border: 1px solid #ccc;
     padding: 20px;
-    margin: 20px;
     border-radius: 5px;
+    text-align: center;
 }
+
 .options {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .correct {
-    background-color: rgb(85, 209, 85);
+    background-color: rgb(64, 221, 64);
 }
+
 .wrong {
-    background-color: orange;
+    background-color: rgb(236, 126, 36);
+}
+
+.question {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+button {
+    font-size: 18px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
