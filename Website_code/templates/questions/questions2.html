@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='quiz_style.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Quiz 2</title>
+    <title>Quiz 1</title>
 </head>
 <body>
     <div class="container d-flex justify-content-center align-items-center vh-100">
@@ -16,6 +16,9 @@
             <div class="options">
                 <!-- js here -->
             </div>
+            <div class="counter mt-2 text-center">
+                Correct: <span id="correctCounter">0</span> / {{ questions|length }}
+            </div>
             <div class="navigation mt-4 d-flex justify-content-between">
                 <button class="btn btn-primary" onclick="prevQuestion()">Previous</button>
                 <button class="btn btn-primary" onclick="nextQuestion()">Next</button>
@@ -25,7 +28,9 @@
 
     <script>
         let currentQuestion = 0;
+        let correctCount = 0; 
         const questions = {{ questions | tojson }};
+        const correctCounter = document.getElementById('correctCounter'); 
         
         function displayQuestion() {
             const question = questions[currentQuestion];
@@ -56,6 +61,11 @@
                     button.classList.add('btn-danger');
                 }
             });
+
+            if (selected === correctAnswer) {
+                correctCount++; 
+                correctCounter.innerText = correctCount; 
+            }
         }
 
         function nextQuestion() {
