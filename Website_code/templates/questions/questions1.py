@@ -1,392 +1,392 @@
 questions0 = [
     {
-        'question': 'Which approach involves analyzing support ticket data to identify common trends and areas for improvement?',
+        'question': '1. Which approach involves analyzing support ticket data to identify common trends and areas for improvement?',
         'options': ['Ticket Throwing', 'Support Ticket Deletion', 'Root Cause Analysis', 'Ticket Data Mining'],
         'answer': 'Root Cause Analysis'
     },
     {
-        'question': 'In the context of applications support, what does "MTTR" stand for?',
+        'question': '2. In the context of applications support, what does "MTTR" stand for?',
         'options': ['My Tires Turned Red', 'Mean Time to Raise', 'More Trouble Troubleshooting Required', 'Mean Time to Repair'],
         'answer': 'Mean Time to Repair'
     },
     {
-        'question': 'Which practice involves testing new features or updates in a controlled environment before deploying them to production?',
+        'question': '3. Which practice involves testing new features or updates in a controlled environment before deploying them to production?',
         'options': ['Random Feature Deployment', 'Feature Free-for-all', 'Feature Testing Grounds', 'Staging Environment'],
         'answer': 'Staging Environment'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "ticket backlog"?',
+        'question': '4. In the context of support, what is the purpose of a "ticket backlog"?',
         'options': ['Collecting used tickets for recycling', 'Queue of unresolved support tickets', 'Creating a backlog of new tickets', 'Hiding tickets'],
         'answer': 'Queue of unresolved support tickets'
     },
     {
-        'question': 'Which approach involves using automated scripts to replicate user actions and identify issues?',
-        'options': ['Manual Replication', 'Human Testing', 'Monkey Business', 'Automated Regression Testing'],
+        'question': '5. Which approach involves using automated scripts to replicate user actions and identify issues?',
+        'options': ['Manual Replication', 'Human Testing', 'Automated Business', 'Automated Regression Testing'],
         'answer': 'Automated Regression Testing'
     },
     {
-        'question': 'In applications support, what is the purpose of a "support knowledge base"?',
+        'question': '6. In applications support, what is the purpose of a "support knowledge base"?',
         'options': ['Keeping secrets', 'Storing passwords', 'A central repository of support-related information to assist agents and users', 'Hiding support information'],
         'answer': 'A central repository of support-related information to assist agents and users'
     },
     {
-        'question': 'Which metric assesses the overall satisfaction level of customers with the support they received?',
+        'question': '7. Which metric assesses the overall satisfaction level of customers with the support they received?',
         'options': ['Overall Joy Index', 'Customer Happiness Quotient', 'Customer Satisfaction Score', 'Support Happiness Factor'],
         'answer': 'Customer Satisfaction Score'
     },
     {
-        'question': 'In the context of applications support, what does "RCA" stand for?',
+        'question': '8. In the context of applications support, what does "RCA" stand for?',
         'options': ['Royal Crown Affair', 'Root Cause Analysis', 'Recurring Customer Anguish', 'Reckless Change Adoption'],
         'answer': 'Root Cause Analysis'
     },
     {
-        'question': 'Which practice involves automated testing of an application to ensure it continues to function as expected?',
+        'question': '9. Which practice involves automated testing of an application to ensure it continues to function as expected?',
         'options': ['Automated Regression Testing', 'Manual Guesswork', 'Random Clicking', 'Automated Breakage Testing'],
         'answer': 'Automated Regression Testing'
     },
     {
-        'question': 'In the context of support, what is the purpose of "call deflection"?',
+        'question': '10. In the context of support, what is the purpose of "call deflection"?',
         'options': ['Avoiding phone calls', 'Bouncing calls to different agents', 'Deflecting blame', 'Guiding users to self-service options'],
         'answer': 'Guiding users to self-service options'
     },
     {
-        'question': 'Which approach involves customers helping each other by sharing their knowledge and experiences?',
-        'options': ['Support Standoff', 'Customer Arm Wrestling', 'Self-Service Support', 'Customer Community'],
+        'question': '11. Which approach involves customers helping each other by sharing their knowledge and experiences?',
+        'options': ['Support Standoff', 'Customer Wrestling', 'Self-Service Support', 'Customer Community'],
         'answer': 'Customer Community'
     },
     {
-        'question': 'In applications support, what is the purpose of a "support SLA"?',
-        'options': ['Stating Love Always', 'Supporting Slow Learning Agents', 'Defining the agreed-upon level of service provided to users', 'Support Super Large Agreement'],
+        'question': '12. In applications support, what is the purpose of a "support SLA"?',
+        'options': ['Stating Live Always', 'Supporting Slow Learning Agents', 'Defining the agreed-upon level of service provided to users', 'Support Super Large Agreement'],
         'answer': 'Defining the agreed-upon level of service provided to users'
     },
     {
-        'question': 'Which metric measures the percentage of support tickets resolved within a single interaction?',
+        'question': '13. Which metric measures the percentage of support tickets resolved within a single interaction?',
         'options': ['First Query Resolution Rate', 'Initial Ticket Solution Index', 'First Response Success Rate', 'Single Interaction Closure Ratio'],
         'answer': 'First Query Resolution Rate'
     },
     {
-        'question': 'In the context of support, what does the term "L1" refer to?',
-        'options': ['Level 1 Support', 'Level 1 Fun', 'Layer 1 of the support cake', 'Lumberjack 1'],
+        'question': '14. In the context of support, what does the term "L1" refer to?',
+        'options': ['Level 1 Support', 'Level 1', 'Layer 1 of the support cake', 'Lumberjack 1'],
         'answer': 'Level 1 Support'
     },
     {
-        'question': 'Which practice involves support teams working across different time zones to provide seamless coverage?',
+        'question': '15. Which practice involves support teams working across different time zones to provide seamless coverage?',
         'options': ['Moonlight Support', 'Follow-the-Sun Support', 'Daylight Avoidance Support', 'Time Zone Juggling'],
         'answer': 'Follow-the-Sun Support'
     },
     {
-        'question': 'In applications support, what is the purpose of "knowledge sharing sessions"?',
+        'question': '16. In applications support, what is the purpose of "knowledge sharing sessions"?',
         'options': ['Sharing top-secret recipes', 'Providing a platform for support agents to share experiences and insights', 'Exchanging movie recommendations', 'Hiding knowledge from others'],
         'answer': 'Providing a platform for support agents to share experiences and insights'
     },
     {
-        'question': 'Which metric measures the average time it takes for a support agent to respond to a new ticket?',
+        'question': '17. Which metric measures the average time it takes for a support agent to respond to a new ticket?',
         'options': ['Initial Response Time Metric', 'First Ticket Reaction Rate', 'First Query Reaction Time', 'Ticket Arrival Speed Index'],
         'answer': 'Initial Response Time Metric'
     },
     {
-        'question': 'In the context of support, what does the term "KPI" stand for?',
+        'question': '18. In the context of support, what does the term "KPI" stand for?',
         'options': ['Key Performance Indicator', 'Kung Fu Panda Impersonator', 'Keep People Informed', 'Knowledge Power Index'],
         'answer': 'Key Performance Indicator'
     },
     {
-        'question': 'Which approach involves continuous monitoring of an application or service to detect issues in real-time?',
-        'options': ['Ignore and Pray', 'Proactive Monitoring', 'Reactive Monitoring', 'Sleeping on the Job'],
+        'question': '19. Which approach involves continuous monitoring of an application or service to detect issues in real-time?',
+        'options': ['Ignore and Pray', 'Proactive Monitoring', 'Reactive Monitoring', 'After Event Monitoring'],
         'answer': 'Proactive Monitoring'
     },
     {
-        'question': 'In applications support, what is the purpose of "user self-service portals"?',
+        'question': '20. In applications support, what is the purpose of "user self-service portals"?',
         'options': ['Hiding user information', 'Preventing users from accessing support', 'Enabling users to find solutions on their own', 'Redirecting users to call centers'],
         'answer': 'Enabling users to find solutions on their own'
     },
     {
-        'question': 'Which metric measures the time taken to acknowledge a new support ticket?',
+        'question': '21. Which metric measures the time taken to acknowledge a new support ticket?',
         'options': ['First Response Time Metric', 'Initial Ticket Greeting Index', 'First Query Greeting Time', 'Ticket Acknowledgment Speed Index'],
         'answer': 'First Response Time Metric'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "support triage" process?',
-        'options': ['Solving puzzles', 'Sorting support agents by height', 'Prioritizing and categorizing support tickets for efficient handling', 'Running in circles'],
+        'question': '22. In the context of support, what is the purpose of a "support triage" process?',
+        'options': ['Solving puzzles', 'Sorting support agents by height', 'Prioritizing and categorizing support tickets for efficient handling', 'Creating support triangles'],
         'answer': 'Prioritizing and categorizing support tickets for efficient handling'
     },
     {
-        'question': 'Which approach involves using historical data to forecast future support demands?',
+        'question': '23. Which approach involves using historical data to forecast future support demands?',
         'options': ['Predictive Analytics', 'Looking at the stars', 'Using a crystal ball', 'Random Guessing'],
         'answer': 'Predictive Analytics'
     },
     {
-        'question': 'In applications support, what is the purpose of "call routing"?',
+        'question': '24. In applications support, what is the purpose of "call routing"?',
         'options': ['Sending calls to voicemail', 'Transferring calls to the CEO', 'Transferring calls to the right support agent based on skills and availability', 'Ignoring calls'],
         'answer': 'Transferring calls to the right support agent based on skills and availability'
     },
     {
-        'question': 'Which metric measures the average time a support ticket remains unresolved?',
+        'question': '25. Which metric measures the average time a support ticket remains unresolved?',
         'options': ['Ticket Age Metric', 'Unresolved Ticket Duration Rate', 'Average Ticket Dormancy', 'Ticket Aging Index'],
         'answer': 'Ticket Age Metric'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "support playbook"?',
-        'options': ['Creating theatrical performances', 'Documenting common support scenarios and their solutions for consistent handling', 'Organizing football strategies', 'Playing games'],
+        'question': '26. In the context of support, what is the purpose of a "support playbook"?',
+        'options': ['Creating theatrical performances', 'Documenting common support scenarios and their solutions for consistent handling', 'Organizing football strategies', 'Playing board games'],
         'answer': 'Documenting common support scenarios and their solutions for consistent handling'
     },
     {
-        'question': 'Which practice involves monitoring an application or service to identify and mitigate potential issues before they impact users?',
-        'options': ['Proactive Monitoring', 'Hiding in the Shadows', 'Blindfolding', 'Reactive Monitoring'],
+        'question': '27. Which practice involves monitoring an application or service to identify and mitigate potential issues before they impact users?',
+        'options': ['Proactive Monitoring', 'Hiding Bugs', 'Blindfolding', 'Reactive Monitoring'],
         'answer': 'Proactive Monitoring'
     },
     {
-        'question': 'In applications support, what is the purpose of "support analytics"?',
+        'question': '28. In applications support, what is the purpose of "support analytics"?',
         'options': ['Predicting lottery numbers', 'Analyzing support-related data to gain insights and improve strategies', 'Analyzing customer\'s horoscopes', 'Analyzing music preferences'],
         'answer': 'Analyzing support-related data to gain insights and improve strategies'
     },
     {
-        'question': 'Which metric measures the percentage of support tickets resolved during the first interaction?',
+        'question': '29. Which metric measures the percentage of support tickets resolved during the first interaction?',
         'options': ['First Contact Resolution Rate', 'Initial Ticket Success Index', 'First Query Closure Rate', 'Single Interaction Resolution Percentage'],
         'answer': 'First Contact Resolution Rate'
     },
     {
-        'question': 'In the context of support, what does "SLC" stand for?',
+        'question': '30. In the context of support, what does "SLC" stand for?',
         'options': ['Support Level Check', 'Support Language Conversion', 'Service Level Commitment', 'Super Long Coffee'],
         'answer': 'Service Level Commitment'
     },
     {
-        'question': 'Which approach involves using real-time chat for support agents to assist users?',
-        'options': ['Telegram Support', 'Telepathic Support', 'Live Chat Support', 'Snail Mail Support'],
+        'question': '31. Which approach involves using real-time chat for support agents to assist users?',
+        'options': ['Telegram Support', 'Post Event Support', 'Live Chat Support', 'Snail Mail Support'],
         'answer': 'Live Chat Support'
     },
     {
-        'question': 'In applications support, what is the purpose of "support metrics"?',
-        'options': ['Decorating support tickets', 'Monitoring the length of support agent\'s fingernails', 'Measuring various aspects of support operations to assess performance and identify areas for improvement', 'Measuring the time it takes for a support agent to tie shoelaces'],
+        'question': '32. In applications support, what is the purpose of "support metrics"?',
+        'options': ['Decorating support tickets', 'Monitoring the length of support agent\'s logs', 'Measuring various aspects of support operations to assess performance and identify areas for improvement', 'Measuring the time it takes for a support agent to respond the phone'],
         'answer': 'Measuring various aspects of support operations to assess performance and identify areas for improvement'
     },
     {
-        'question': 'Which practice involves using automated responses to acknowledge receipt of a support ticket?',
+        'question': '33. Which practice involves using automated responses to acknowledge receipt of a support ticket?',
         'options': ['Automated Acknowledgment', 'Auto-Reply Bot', 'Robotic Ticket Greeting', 'Automated Thank You'],
         'answer': 'Auto-Reply Bot'
     },
     {
-        'question': 'In the context of support, what does the term "L2" refer to?',
+        'question': '34. In the context of support, what does the term "L2" refer to?',
         'options': ['Level 2 Support', 'Level 2 Dance Moves', 'Layer 2 of the support cake', 'Llama 2'],
         'answer': 'Level 2 Support'
     },
     {
-        'question': 'Which metric measures the percentage of support tickets resolved within the defined SLA timeframe?',
-        'options': ['SLA Compliance Rate', 'SLA Rebellion Index', 'SLA Ignorance Percentage', 'SLA Nonchalance Ratio'],
+        'question': '35. Which metric measures the percentage of support tickets resolved within the defined SLA timeframe?',
+        'options': ['SLA Compliance Rate', 'SLA Rebellion Index', 'SLA Ignorance Percentage', 'SLA Nonverbal Ratio'],
         'answer': 'SLA Compliance Rate'
     },
     {
-        'question': 'In applications support, what is the purpose of "support escalation"?',
-        'options': ['Escaping support duties', 'Prioritizing support tickets based on the level of anger from users', 'Raising the priority of a support ticket to a higher level of management for quicker resolution', 'Escalating support agents to superhero status'],
+        'question': '36. In applications support, what is the purpose of "support escalation"?',
+        'options': ['Escaping support duties', 'Prioritizing support tickets based on the level of anger from users', 'Raising the priority of a support ticket to a higher level of management for quicker resolution', 'Escalating support agents to hero status'],
         'answer': 'Raising the priority of a support ticket to a higher level of management for quicker resolution'
     },
     {
-        'question': 'Which approach involves monitoring and managing the performance and availability of applications?',
-        'options': ['Performance and Availability Management', 'Sleeping on the Job', 'Performance Management Only', 'Availability Management Only'],
+        'question': '37. Which approach involves monitoring and managing the performance and availability of applications?',
+        'options': ['Performance and Availability Management', 'Ticket Classification', 'Performance Management Only', 'Availability Management Only'],
         'answer': 'Performance and Availability Management'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "support dashboard"?',
-        'options': ['Monitoring speed limits', 'Visualizing and presenting key support metrics and trends', 'Controlling a spaceship', 'Choosing a restaurant'],
+        'question': '38. In the context of support, what is the purpose of a "support dashboard"?',
+        'options': ['Monitoring speed limits', 'Visualizing and presenting key support metrics and trends', 'Controlling a spaceship', 'Customizing your day to day operations'],
         'answer': 'Visualizing and presenting key support metrics and trends'
     }
 ]
 
 questions1 = [
     {
-        'question': 'What does the term "SLM" stand for in applications support?',
+        'question': '1. What does the term "SLM" stand for in applications support?',
         'options': ['Support Level Management', 'Service Lifecycle Monitoring', 'Service Level Management', 'System Log Maintenance'],
         'answer': 'Service Level Management'
     },
     {
-        'question': 'Which approach involves a support team resolving issues by connecting to the user’s computer remotely?',
-        'options': ['Crowdsourcing', 'Remote Scripting', 'Self-service', 'On-site Support'],
-        'answer': 'Remote Scripting'
+        'question': '2. Which approach involves a support team resolving issues by connecting to the user’s computer remotely?',
+        'options': ['Crowdsourcing', 'Remote Support', 'Self-service', 'On-site Support'],
+        'answer': 'Remote Support'
     },
     {
-        'question': 'Which factor is NOT considered when prioritizing support tickets?',
+        'question': '3. Which factor is NOT considered when prioritizing support tickets?',
         'options': ['Issue complexity', 'User seniority', 'Impact on business', 'Urgency'],
         'answer': 'User seniority'
     },
     {
-        'question': 'What is the primary purpose of a "runbook" in applications support?',
+        'question': '4. What is the primary purpose of a "runbook" in applications support?',
         'options': ['Decorative documentation', 'Cooking recipes', 'Automated deployment', 'Providing step-by-step guidance for issue resolution'],
         'answer': 'Providing step-by-step guidance for issue resolution'
     },
     {
-        'question': 'What is the role of an "incident response plan" in applications support?',
+        'question': '5. What is the role of an "incident response plan" in applications support?',
         'options': ['Managing payroll', 'Addressing long-term goals', 'Preparing for potential incidents and defining action steps', 'Creating new features'],
         'answer': 'Preparing for potential incidents and defining action steps'
     },
     {
-        'question': 'Which metric measures the average time it takes to resolve a support ticket?',
+        'question': '6. Which metric measures the average time it takes to resolve a support ticket?',
         'options': ['Resolution Rate', 'First Response Time', 'Service Availability', 'Mean Time to Resolution'],
         'answer': 'Mean Time to Resolution'
     },
     {
-        'question': 'What does "root cause" refer to in the context of applications support?',
+        'question': '7. What does "root cause" refer to in the context of applications support?',
         'options': ['The main customer', 'The underlying cause of an issue', 'A support team lead', 'The final resolution'],
         'answer': 'The underlying cause of an issue'
     },
     {
-        'question': 'Which communication channel allows support teams to address multiple user queries simultaneously?',
+        'question': '8. Which communication channel allows support teams to address multiple user queries simultaneously?',
         'options': ['Fax', 'Smoke signals', 'Phone calls', 'Live Chat'],
         'answer': 'Live Chat'
     },
     {
-        'question': 'In the context of support, what does "SLT" stand for?',
+        'question': '9. In the context of support, what does "SLT" stand for?',
         'options': ['Service Level Target', 'Service Level Tag', 'Superior Leadership Team', 'Support Lifecycle Time'],
         'answer': 'Service Level Target'
     },
     {
-        'question': 'Which support practice involves categorizing and tagging support tickets for easy retrieval and analysis?',
+        'question': '10. Which support practice involves categorizing and tagging support tickets for easy retrieval and analysis?',
         'options': ['Ticket Sorting', 'Ticket Juggling', 'Ticket Tagging', 'Ticket Decorating'],
         'answer': 'Ticket Tagging'
     },
     {
-        'question': 'What is the purpose of "release notes" in applications support?',
+        'question': '11. What is the purpose of "release notes" in applications support?',
         'options': ['Keeping track of employee attendance', 'Documenting software development methodologies', 'Providing information about new features, fixes, and known issues', 'Creating colorful diagrams'],
         'answer': 'Providing information about new features, fixes, and known issues'
     },
     {
-        'question': 'What does "SLR" stand for in the context of applications support?',
+        'question': '12. What does "SLR" stand for in the context of applications support?',
         'options': ['Service Level Request', 'Support Level Report', 'Service Level Requirement', 'Software Licensing Review'],
         'answer': 'Service Level Requirement'
     },
     {
-        'question': 'Which metric assesses the percentage of support tickets resolved successfully on the first interaction?',
+        'question': '13. Which metric assesses the percentage of support tickets resolved successfully on the first interaction?',
         'options': ['First Contact Resolution Rate', 'First Ticket Resolution Index', 'First Response Success Rate', 'First Query Closure Ratio'],
         'answer': 'First Contact Resolution Rate'
     },
     {
-        'question': 'What is the primary purpose of a "knowledge-centered support" approach?',
+        'question': '14. What is the primary purpose of a "knowledge-centered support" approach?',
         'options': ['Banning knowledge sharing', 'Prioritizing support requests', 'Creating knowledge silos', 'Building and sharing a collective support knowledge base'],
         'answer': 'Building and sharing a collective support knowledge base'
     },
     {
-        'question': 'Which metric measures the percentage of time a service or application is available for use?',
+        'question': '15. Which metric measures the percentage of time a service or application is available for use?',
         'options': ['Uptime Percentage', 'Downtime Ratio', 'Resolution Success Rate', 'Latency Index'],
         'answer': 'Uptime Percentage'
     },
     {
-        'question': 'In the context of support, what is the purpose of "swarming"?',
+        'question': '16. In the context of support, what is the purpose of "swarming"?',
         'options': ['Studying insects', 'Assigning tasks randomly', 'Collaboratively working on a support ticket to quickly resolve issues', 'Creating chaos'],
         'answer': 'Collaboratively working on a support ticket to quickly resolve issues'
     },
     {
-        'question': 'Which approach involves users resolving issues on their own using available resources?',
-        'options': ['Self-support', 'Peer pressure', 'Telepathy', 'Passing the buck'],
+        'question': '17. Which approach involves users resolving issues on their own using available resources?',
+        'options': ['Self-support', 'Peer pressure', 'Call Center', 'Passing the blame'],
         'answer': 'Self-support'
     },
     {
-        'question': 'What is the primary purpose of a "dashboard" in applications support?',
-        'options': ['Decorating the office', 'Monitoring and visualizing key support metrics', 'Driving on the highway', 'Changing tires'],
+        'question': '18. What is the primary purpose of a "dashboard" in applications support?',
+        'options': ['Decorating the office', 'Monitoring and visualizing key support metrics', 'Driving on the highway', 'Using a computer applications'],
         'answer': 'Monitoring and visualizing key support metrics'
     },
     {
-        'question': 'What does the term "severity" refer to in the context of support tickets?',
+        'question': '19. What does the term "severity" refer to in the context of support tickets?',
         'options': ['The level of support agent expertise', 'How seriously the support agent takes the ticket', 'The impact and urgency of the issue', 'The number of times the issue occurred'],
         'answer': 'The impact and urgency of the issue'
     },
     {
-        'question': 'Which metric measures the percentage of support requests that are resolved within the defined SLA timeframe?',
+        'question': '20. Which metric measures the percentage of support requests that are resolved within the defined SLA timeframe?',
         'options': ['SLA Compliance Rate', 'SLA Rebellion Index', 'SLA Ignorance Percentage', 'SLA Nonchalance Ratio'],
         'answer': 'SLA Compliance Rate'
     },
     {
-        'question': 'In the context of support, what is the purpose of "escalation"?',
+        'question': '21. In the context of support, what is the purpose of "escalation"?',
         'options': ['Climbing mountains', 'Transferring support agents to a different team', 'Taking a break', 'Raising the priority of a support ticket to ensure quicker resolution'],
         'answer': 'Raising the priority of a support ticket to ensure quicker resolution'
     },
     {
-        'question': 'Which practice involves using historical data to identify trends, patterns, and insights in support operations?',
+        'question': '22. Which practice involves using historical data to identify trends, patterns, and insights in support operations?',
         'options': ['Predictive Analytics', 'Reading tea leaves', 'Guessing', 'Ignoring data'],
         'answer': 'Predictive Analytics'
     },
     {
-        'question': 'What does "NPS" stand for in the context of customer feedback?',
+        'question': '23. What does "NPS" stand for in the context of customer feedback?',
         'options': ['Net Promoter Score', 'Never Provide Support', 'Nice Person Syndrome', 'New Product Showcase'],
         'answer': 'Net Promoter Score'
     },
     {
-        'question': 'In applications support, what is the purpose of "trend analysis"?',
-        'options': ['Predicting fashion trends', 'Ignoring data trends', 'Identifying recurring patterns and anomalies to enhance support strategies', 'Watching movies'],
+        'question': '24. In applications support, what is the purpose of "trend analysis"?',
+        'options': ['Predicting fashion trends', 'Ignoring data trends', 'Identifying recurring patterns and anomalies to enhance support strategies', 'Watching incidents'],
         'answer': 'Identifying recurring patterns and anomalies to enhance support strategies'
     },
     {
-        'question': 'Which approach involves a support team rotating shifts to provide 24/7 coverage?',
+        'question': '25. Which approach involves a support team rotating shifts to provide 24/7 coverage?',
         'options': ['Shiftless Support', 'Round-the-Clock Support', 'Supportless Rotation', 'Shiftful Neglect'],
         'answer': 'Round-the-Clock Support'
     },
     {
-        'question': 'In the context of support, what is the purpose of "churn rate"?',
-        'options': ['Measuring the speed of a blender', 'Calculating the rate at which customers stop using a service', 'Determining the number of support tickets closed within a day', 'Predicting customer preferences'],
+        'question': '26. In the context of support, what is the purpose of "churn rate"?',
+        'options': ['Measuring the speed of an application', 'Calculating the rate at which customers stop using a service', 'Determining the number of support tickets closed within a day', 'Predicting customer preferences'],
         'answer': 'Calculating the rate at which customers stop using a service'
     },
     {
-        'question': 'Which metric measures the percentage of customers who continue using a service after a specific period?',
-        'options': ['Customer Attrition Rate', 'Customer Seduction Rate', 'Customer Evaporation Index', 'Customer Retention Rate'],
+        'question': '27. Which metric measures the percentage of customers who continue using a service after a specific period?',
+        'options': ['Customer Attrition Rate', 'Customer Satisfaction Rate', 'Customer Evaporation Index', 'Customer Retention Rate'],
         'answer': 'Customer Retention Rate'
     },
     {
-        'question': 'In applications support, what does "CSAT" stand for?',
+        'question': '28. In applications support, what does "CSAT" stand for?',
         'options': ['Crazy Support Agent Team', 'Crying, Sighing, Annoyance, and Tantrums', 'Customer Satisfaction', 'Customer Support and Technology'],
         'answer': 'Customer Satisfaction'
     },
     {
-        'question': 'Which practice involves categorizing and assigning support tickets based on specific skills and expertise?',
+        'question': '29. Which practice involves categorizing and assigning support tickets based on specific skills and expertise?',
         'options': ['Random Ticket Distribution', 'Ticket Throwing', 'Ticket Chucking', 'Skill-Based Routing'],
         'answer': 'Skill-Based Routing'
     },
     {
-        'question': 'What is the purpose of "customer personas" in applications support?',
+        'question': '30. What is the purpose of "customer personas" in applications support?',
         'options': ['Impersonating customers', 'Creating imaginary friends', 'Developing fictional profiles representing different customer types to tailor support strategies', 'Building a fan club'],
         'answer': 'Developing fictional profiles representing different customer types to tailor support strategies'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "surge queue"?',
-        'options': ['Managing lines at amusement parks', 'Handling sudden influxes of support requests', 'Storing excess office supplies', 'Serving refreshments'],
+        'question': '31. In the context of support, what is the purpose of a "surge queue"?',
+        'options': ['Managing lines at amusement parks', 'Handling sudden influxes of support requests', 'Storing excess office supplies', 'Serving refreshments for agents'],
         'answer': 'Handling sudden influxes of support requests'
     },
     {
-        'question': 'Which metric assesses how quickly support agents respond to new tickets?',
+        'question': '32. Which metric assesses how quickly support agents respond to new tickets?',
         'options': ['Response Time Metric', 'Speedy Gonzales Index', 'First Query Response Rate', 'Initial Ticket Reaction Ratio'],
         'answer': 'Response Time Metric'
     },
     {
-        'question': 'In applications support, what is the purpose of "reprioritization"?',
-        'options': ['Rearranging furniture', 'Changing support agent roles', 'Reevaluating and adjusting the priority of support tickets based on changing circumstances', 'Learning a new dance move'],
+        'question': '33. In applications support, what is the purpose of "reprioritization"?',
+        'options': ['Rearranging furniture in the office', 'Changing support agent roles', 'Reevaluating and adjusting the priority of support tickets based on changing circumstances', 'Learning a new career skill'],
         'answer': 'Reevaluating and adjusting the priority of support tickets based on changing circumstances'
     },
     {
-        'question': 'Which approach involves automating routine support tasks using AI or bots?',
+        'question': '34. Which approach involves automating routine support tasks using AI or bots?',
         'options': ['Bot-less Automation', 'Bot Rebellion', 'Artificial Intelligence Revolt', 'Chatbots and AI Automation'],
         'answer': 'Chatbots and AI Automation'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "support SLA"?',
+        'question': '35. In the context of support, what is the purpose of a "support SLA"?',
         'options': ['Support Super Large Agreement', 'Stating Love Always', 'Supporting Slow Learning Agents', 'Defining the agreed-upon level of service provided to users'],
         'answer': 'Defining the agreed-upon level of service provided to users'
     },
     {
-        'question': 'Which metric measures the percentage of customers who recommend a product or service to others?',
+        'question': '36. Which metric measures the percentage of customers who recommend a product or service to others?',
         'options': ['Customer Referral Rate', 'Customer Complaint Ratio', 'Customer Silence Rate', 'Customer Grumbling Index'],
         'answer': 'Customer Referral Rate'
     },
     {
-        'question': 'In applications support, what is the purpose of "capacity management"?',
-        'options': ['Filling up storage rooms', 'Optimizing resource allocation to meet support demands', 'Managing cups and saucers', 'Calculating room temperature'],
+        'question': '37. In applications support, what is the purpose of "capacity management"?',
+        'options': ['Filling up storage rooms', 'Optimizing resource allocation to meet support demands', 'Managing people in the office', 'Calculating server room temperature'],
         'answer': 'Optimizing resource allocation to meet support demands'
     },
     {
-        'question': 'Which practice involves using a support portal or knowledge base for users to find solutions on their own?',
-        'options': ['Support Hide-and-Seek', 'Support Runaround', 'Self-Service Support', 'Support Tug-of-War'],
+        'question': '38. Which practice involves using a support portal or knowledge base for users to find solutions on their own?',
+        'options': ['Support Hide-and-Seek', 'Support Runaround', 'Self-Service Support', 'Support Remote Service'],
         'answer': 'Self-Service Support'
     }
 ]
 
 questions2 = [
     {
-        'question': 'Explain the concept of "SLA breach" in the context of applications support.',
+        'question': '1. Explain the concept of "SLA breach" in the context of applications support.',
         'options': [
             'An SLA breach refers to a breach in data security',
             'An SLA breach occurs when the support team responds too quickly',
@@ -396,7 +396,7 @@ questions2 = [
         'answer': 'An SLA breach happens when the team fails to meet the defined service level agreements'
     },
     {
-        'question': 'What is the role of a triage process in applications support?',
+        'question': '2. What is the role of a triage process in applications support?',
         'options': [
             'Triage process is about avoiding user complaints',
             'Triage process only applies to medical emergencies',
@@ -406,7 +406,7 @@ questions2 = [
         'answer': 'Triage process involves prioritizing and categorizing incoming support requests for efficient resolution'
     },
     {
-        'question': 'How would you ensure a seamless transition when handing over an application to another support lead?',
+        'question': '3. How would you ensure a seamless transition when handing over an application to another support lead?',
         'options': [
             'Hand over the application without any documentation',
             'Create confusion during the handover to maintain job security',
@@ -416,7 +416,7 @@ questions2 = [
         'answer': 'Provide comprehensive documentation, conduct knowledge transfer sessions, and offer ongoing support'
     },
     {
-        'question': 'Describe a situation where you successfully managed to reduce the backlog of support tickets.',
+        'question': '4. Describe a situation where you successfully managed to reduce the backlog of support tickets.',
         'options': [
             'Backlog reduction is impossible; the tickets will keep piling up',
             'I ignored the backlog and focused on new tickets only',
@@ -426,7 +426,7 @@ questions2 = [
         'answer': 'I implemented process improvements, assigned tasks efficiently, and communicated with the team to reduce the backlog'
     },
     {
-        'question': 'Explain the term "knowledge base" and its importance in applications support.',
+        'question': '5. Explain the term "knowledge base" and its importance in applications support.',
         'options': [
             'A knowledge base is a place to store irrelevant information',
             'A knowledge base is only for developers',
@@ -436,17 +436,17 @@ questions2 = [
         'answer': 'A knowledge base is a repository of valuable information, such as solutions, guides, and troubleshooting steps'
     },
     {
-        'question': 'How would you manage the expectations of stakeholders when a support request has a longer resolution time?',
+        'question': '6. How would you manage the expectations of stakeholders when a support request has a longer resolution time?',
         'options': [
             'Tell stakeholders that the issue is not important',
-            'Blame the team for the delay and avoid communication',
+            'Blame the complexity of problem for the delay and avoid communication',
             'Communicate proactively, provide regular updates, and manage expectations by explaining the reasons for the delay',
             'Ignore stakeholders and hope they forget about the request'
         ],
         'answer': 'Communicate proactively, provide regular updates, and manage expectations by explaining the reasons for the delay'
     },
     {
-        'question': 'What steps would you take to ensure a smooth onboarding process for a new team member joining the support team?',
+        'question': '7. What steps would you take to ensure a smooth onboarding process for a new team member joining the support team?',
         'options': [
             'Provide no training and expect the new member to learn on their own',
             'Assign the new member to the most challenging cases immediately',
@@ -456,7 +456,7 @@ questions2 = [
         'answer': 'Offer proper training, assign a mentor, and gradually increase the complexity of tasks'
     },
     {
-        'question': 'Describe a situation where you successfully improved the response time of your support team.',
+        'question': '8. Describe a situation where you successfully improved the response time of your support team.',
         'options': [
             'I never focused on improving response time',
             'Response time improvement is not possible',
@@ -466,7 +466,7 @@ questions2 = [
         'answer': 'I analyzed the existing process, identified bottlenecks, optimized workflows, and tracked metrics to measure the improvement'
     },
     {
-        'question': 'Explain the concept of "first-call resolution" in applications support.',
+        'question': '9. Explain the concept of "first-call resolution" in applications support.',
         'options': [
             'First-call resolution refers to only resolving issues on the first call',
             'First-call resolution is not relevant in support',
@@ -476,7 +476,7 @@ questions2 = [
         'answer': 'First-call resolution involves resolving the user\'s issue during their initial contact with the support team'
     },
     {
-        'question': 'How would you handle a situation where a user is frustrated due to recurring technical issues with an application?',
+        'question': '10. How would you handle a situation where a user is frustrated due to recurring technical issues with an application?',
         'options': [
             'Blame the user for not understanding the application',
             'Ignore the user and hope they stop using the application',
@@ -486,7 +486,7 @@ questions2 = [
         'answer': 'Empathize with the user, apologize for the inconvenience, and assure them that you\'re working to resolve the issues'
     },
     {
-        'question': 'What strategies would you use to ensure effective communication and collaboration within a remote support team?',
+        'question': '11. What strategies would you use to ensure effective communication and collaboration within a remote support team?',
         'options': [
             'Remote teams don\'t need communication and collaboration',
             'Expect remote teams to figure out communication on their own',
@@ -759,7 +759,7 @@ questions2 = [
 
 questions3 = [
     {
-        'question': 'What is the purpose of an SLA (Service Level Agreement) in the context of applications support?',
+        'question': '1. What is the purpose of an SLA (Service Level Agreement) in the context of applications support?',
         'options': [
             'To outline the project scope',
             'To document user feedback',
@@ -769,7 +769,7 @@ questions3 = [
         'answer': 'To define service expectations'
     },
     {
-        'question': 'Explain the difference between a bug and a feature request in software development.',
+        'question': '2. Explain the difference between a bug and a feature request in software development.',
         'options': [
             'Bugs are always critical, while feature requests are minor improvements.',
             'Bugs are defects in the software, while feature requests suggest new functionality.',
@@ -779,7 +779,7 @@ questions3 = [
         'answer': 'Bugs are defects in the software, while feature requests suggest new functionality.'
     },
     {
-        'question': 'How would you troubleshoot a database connectivity issue for an application?',
+        'question': '3. How would you troubleshoot a database connectivity issue for an application?',
         'options': [
             'Check the server\'s CPU temperature',
             'Verify network connectivity and firewall settings',
@@ -789,7 +789,7 @@ questions3 = [
         'answer': 'Verify network connectivity and firewall settings'
     },
     {
-        'question': 'What are the key considerations when planning an application upgrade or migration?',
+        'question': '4. What are the key considerations when planning an application upgrade or migration?',
         'options': [
             'Minimizing user impact',
             'Changing the entire UI design',
@@ -799,7 +799,7 @@ questions3 = [
         'answer': 'Minimizing user impact'
     },
     {
-        'question': 'Describe the role of version control systems in managing application source code.',
+        'question': '5. Describe the role of version control systems in managing application source code.',
         'options': [
             'Ensuring code is always perfect',
             'Tracking changes, facilitating collaboration, and enabling rollbacks',
@@ -809,7 +809,7 @@ questions3 = [
         'answer': 'Tracking changes, facilitating collaboration, and enabling rollbacks'
     },
     {
-        'question': 'What is the significance of a "sandbox environment" in application testing and development?',
+        'question': '6. What is the significance of a "sandbox environment" in application testing and development?',
         'options': [
             'It\'s where code is hidden from the team',
             'It\'s used for deploying production code',
@@ -819,7 +819,7 @@ questions3 = [
         'answer': 'It\'s an isolated space for testing without affecting production'
     },
     {
-        'question': 'Explain the concept of continuous integration (CI) and continuous delivery (CD).',
+        'question': '7. Explain the concept of continuous integration (CI) and continuous delivery (CD).',
         'options': [
             'CI is the process of sporadically merging code, while CD is for manually deploying software.',
             'CI is about releasing code once a year, while CD is for weekly releases.',
@@ -829,7 +829,7 @@ questions3 = [
         'answer': 'CI is automating the integration of code changes, while CD automates the deployment of code.'
     },
     {
-        'question': 'How do you ensure data security and compliance while providing application support?',
+        'question': '8. How do you ensure data security and compliance while providing application support?',
         'options': [
             'Share sensitive data on public forums',
             'Encrypt data at rest and during transmission',
@@ -839,7 +839,7 @@ questions3 = [
         'answer': 'Encrypt data at rest and during transmission'
     },
     {
-        'question': 'What are the common steps to diagnose and resolve performance bottlenecks in an application?',
+        'question': '9. What are the common steps to diagnose and resolve performance bottlenecks in an application?',
         'options': [
             'Delete unnecessary user accounts',
             'Throw more hardware resources at the problem',
@@ -849,17 +849,17 @@ questions3 = [
         'answer': 'Monitor resource usage, analyze code, optimize queries, and implement caching'
     },
     {
-        'question': 'Describe the process of applying patches and updates to a production application.',
+        'question': '10. Describe the process of applying patches and updates to a production application.',
         'options': [
             'Apply updates directly to production without testing',
             'Test updates in a non-production environment, have a rollback plan, and communicate updates to stakeholders',
-            'Apply patches only during high-traffic hours',
+            'Apply patches only during low-traffic hours',
             'Wait for users to report issues before considering updates'
         ],
         'answer': 'Test updates in a non-production environment, have a rollback plan, and communicate updates to stakeholders'
     },
     {
-        'question': 'How would you prioritize and assign support tasks to your team members?',
+        'question': '11. How would you prioritize and assign support tasks to your team members?',
         'options': [
             'Assign tasks randomly to keep things interesting',
             'Prioritize based on team members\' popularity',
@@ -869,7 +869,7 @@ questions3 = [
         'answer': 'Consider urgency, impact, and team members\' strengths'
     },
     {
-        'question': 'What strategies would you employ to motivate your team during challenging projects?',
+        'question': '12. What strategies would you employ to motivate your team during challenging projects?',
         'options': [
             'Tell them to "just deal with it"',
             'Provide growth opportunities and recognize achievements',
@@ -879,7 +879,7 @@ questions3 = [
         'answer': 'Provide growth opportunities and recognize achievements'
     },
     {
-        'question': 'Describe a situation where you had to mediate a conflict within your team. How did you handle it?',
+        'question': '13. Describe a situation where you had to mediate a conflict within your team. How did you handle it?',
         'options': [
             'I avoided the conflict and hoped it would go away',
             'I picked a side and made one person happy',
@@ -889,7 +889,7 @@ questions3 = [
         'answer': 'I listened to both sides, found common ground, and encouraged open communication'
     },
     {
-        'question': 'Explain the concept of "servant leadership" and how it applies to a support lead role.',
+        'question': '14. Explain the concept of "servant leadership" and how it applies to a support lead role.',
         'options': [
             'Servant leadership means leading with an iron fist',
             'Servant leadership is about telling the team what to do',
@@ -899,17 +899,17 @@ questions3 = [
         'answer': 'Servant leadership focuses on serving the team\'s needs and facilitating their success'
     },
     {
-        'question': 'How do you foster a culture of collaboration and knowledge sharing within your team?',
+        'question': '15. How do you foster a culture of collaboration and knowledge sharing within your team?',
         'options': [
             'Discourage communication to maintain focus',
             'Keep all knowledge to yourself',
             'Encourage open communication, provide knowledge-sharing platforms, and hold regular meetings',
-            'Assign tasks individually to prevent collaboration'
+            'Assign tasks individually'
         ],
         'answer': 'Encourage open communication, provide knowledge-sharing platforms, and hold regular meetings'
     },
     {
-        'question': 'How would you communicate a critical application outage to both technical and non-technical stakeholders?',
+        'question': '16. How would you communicate a critical application outage to both technical and non-technical stakeholders?',
         'options': [
             'Send an email with no details',
             'Use technical jargon to confuse everyone',
@@ -919,7 +919,7 @@ questions3 = [
         'answer': 'Provide regular updates with expected resolution times and steps for users'
     },
     {
-        'question': 'Describe your approach to managing communication with external vendors and partners.',
+        'question': '17. Describe your approach to managing communication with external vendors and partners.',
         'options': [
             'Avoid communication to maintain a competitive edge',
             'Keep vendors in the dark about projects',
@@ -929,7 +929,7 @@ questions3 = [
         'answer': 'Maintain clear communication, set expectations, and address contract-related issues promptly'
     },
     {
-        'question': 'What strategies would you use to gather and prioritize feedback from end users?',
+        'question': '18. What strategies would you use to gather and prioritize feedback from end users?',
         'options': [
             'Ignore user feedback to save time',
             'Ask users to provide feedback only once a year',
@@ -939,7 +939,7 @@ questions3 = [
         'answer': 'Gather feedback through surveys, user groups, and regular communication channels'
     },
     {
-        'question': 'Explain the importance of creating and maintaining comprehensive documentation for supported applications.',
+        'question': '19. Explain the importance of creating and maintaining comprehensive documentation for supported applications.',
         'options': [
             'Documentation is a waste of time and resources',
             'Documentation is only for developers',
@@ -949,7 +949,7 @@ questions3 = [
         'answer': 'Documentation aids in onboarding, troubleshooting, and maintaining the application over time'
     },
     {
-        'question': 'How would you handle a situation where a stakeholder requests a feature that is outside the scope of the current project?',
+        'question': '20. How would you handle a situation where a stakeholder requests a feature that is outside the scope of the current project?',
         'options': [
             'Implement the feature without question',
             'Ignore the request and hope they forget about it',
@@ -959,17 +959,7 @@ questions3 = [
         'answer': 'Manage stakeholder expectations, discuss feasibility, and assess the impact of the requested feature'
     },
     {
-        'question': 'Describe a complex technical issue you successfully resolved as an applications support lead. What steps did you take?',
-        'options': [
-            'I never encountered any technical issues',
-            'I panicked and asked someone else to solve it',
-            'I analyzed the issue, conducted thorough testing, collaborated with experts, and implemented a solution',
-            'I ignored the issue until it went away'
-        ],
-        'answer': 'I analyzed the issue, conducted thorough testing, collaborated with experts, and implemented a solution'
-    },
-    {
-        'question': 'How do you approach a situation where there is a discrepancy between user-reported issues and your initial findings?',
+        'question': '21. How do you approach a situation where there is a discrepancy between user-reported issues and your initial findings?',
         'options': [
             'Always trust user reports without question',
             'Dismiss user reports and proceed with your own findings',
@@ -979,7 +969,7 @@ questions3 = [
         'answer': 'Investigate further by comparing logs, validating user reports, and seeking additional information'
     },
     {
-        'question': 'Explain how you would decide whether to escalate an issue to higher management.',
+        'question': '22. Explain how you would decide whether to escalate an issue to higher management.',
         'options': [
             'Escalate every issue to higher management to save time',
             'Never involve higher management in any issues',
@@ -989,17 +979,17 @@ questions3 = [
         'answer': 'Base the decision on the severity, impact, and adherence to SLA. Involve higher management if needed for faster resolution'
     },
     {
-        'question': 'What steps would you take to prevent a recurring technical issue from happening again?',
+        'question': '23. What steps would you take to prevent a recurring technical issue from happening again?',
         'options': [
             'Ignore the issue and hope it resolves itself',
-            'Blame someone else for the issue',
+            'Ask someone else to look at the issue',
             'Prevent recurring issues by identifying root causes, implementing fixes, and testing thoroughly',
             'Pretend the issue never happened and move on'
         ],
         'answer': 'Prevent recurring issues by identifying root causes, implementing fixes, and testing thoroughly'
     },
     {
-        'question': 'In a scenario where multiple critical issues arise simultaneously, how would you prioritize and manage them?',
+        'question': '24. In a scenario where multiple critical issues arise simultaneously, how would you prioritize and manage them?',
         'options': [
             'Ignore the issues and hope they go away',
             'Assign all issues to your favorite team members',
@@ -1009,7 +999,7 @@ questions3 = [
         'answer': 'Prioritize issues based on their impact, urgency, and alignment with business goals'
     },
     {
-        'question': 'How does applications support contribute to achieving overall business goals?',
+        'question': '25. How does applications support contribute to achieving overall business goals?',
         'options': [
             'Applications support has no impact on business goals',
             'Applications support slows down business operations',
@@ -1019,7 +1009,7 @@ questions3 = [
         'answer': 'Applications support contributes by ensuring applications run smoothly, optimizing user experience, and minimizing downtime'
     },
     {
-        'question': 'Describe the role of Key Performance Indicators (KPIs) in measuring the effectiveness of your support team.',
+        'question': '26. Describe the role of Key Performance Indicators (KPIs) in measuring the effectiveness of your support team.',
         'options': [
             'KPIs have no role in measuring team effectiveness',
             'KPIs are only used to punish underperforming team members',
@@ -1029,9 +1019,9 @@ questions3 = [
         'answer': 'KPIs measure support team performance, such as response times, resolution rates, and user satisfaction'
     },
     {
-        'question': 'Explain the term "root cause analysis" and its significance in applications support.',
+        'question': '27. Explain the term "root cause analysis" and its significance in applications support.',
         'options': [
-            'Root cause analysis is about blaming team members for issues',
+            'Root cause analysis is about blaming code for issues',
             'Root cause analysis is irrelevant in applications support',
             'Root cause analysis identifies underlying issues to prevent recurring problems',
             'Root cause analysis is only useful for hardware issues'
@@ -1039,27 +1029,27 @@ questions3 = [
         'answer': 'Root cause analysis identifies underlying issues to prevent recurring problems'
     },
     {
-        'question': 'How do you ensure that your team remains compliant with relevant industry regulations and standards?',
+        'question': '28. How do you ensure that your team remains compliant with relevant industry regulations and standards?',
         'options': [
             'Ignore regulations and standards to save time',
             'Pretend that regulations and standards don\'t apply to your team',
             'Stay updated with regulations, conduct regular audits, and implement necessary safeguards',
-            'Blame other departments for compliance issues'
+            'Ask other departments to solve compliance issues'
         ],
         'answer': 'Stay updated with regulations, conduct regular audits, and implement necessary safeguards'
     },
     {
-        'question': 'Describe a situation where you identified an opportunity to optimize a support process. How did you implement the change?',
+        'question': '29. Describe a situation where you identified an opportunity to optimize a support process. How did you implement the change?',
         'options': [
             'I never found any opportunities for process optimization',
             'I ignored the opportunity and carried on with the old process',
             'I identified the inefficiency, proposed improvements, and measured the impact of the change',
-            'I blamed others for the inefficient process'
+            'I followed the inefficient process'
         ],
         'answer': 'I identified the inefficiency, proposed improvements, and measured the impact of the change'
     },
     {
-        'question': 'How do you stay updated with the latest trends and advancements in applications support and technology?',
+        'question': '30. How do you stay updated with the latest trends and advancements in applications support and technology?',
         'options': [
             'I don\'t believe in staying updated',
             'I rely on outdated sources for information',
@@ -1069,7 +1059,7 @@ questions3 = [
         'answer': 'I stay updated through industry publications, webinars, conferences, and online courses'
     },
     {
-        'question': 'Describe a recent technological trend that you believe could significantly impact applications support in the near future.',
+        'question': '31. Describe a recent technological trend that you believe could significantly impact applications support in the near future.',
         'options': [
             'I don\'t believe in technological trends',
             'I don\'t pay attention to trends',
@@ -1079,7 +1069,7 @@ questions3 = [
         'answer': 'A relevant trend (e.g., AI-driven support, DevSecOps) and explain its potential impact'
     },
     {
-        'question': 'How would you encourage your team members to engage in continuous learning and professional development?',
+        'question': '32. How would you encourage your team members to engage in continuous learning and professional development?',
         'options': [
             'I discourage learning to prevent employees from leaving',
             'I force team members to learn against their will',
@@ -1089,7 +1079,7 @@ questions3 = [
         'answer': 'Encourage learning through training opportunities, mentorship, and setting aside time for professional development'
     },
     {
-        'question': 'Explain the concept of "self-healing applications" and its potential benefits in the context of support.',
+        'question': '33. Explain the concept of "self-healing applications" and its potential benefits in the context of support.',
         'options': [
             'Self-healing applications are a myth',
             'Self-healing applications only create more problems',
@@ -1099,7 +1089,7 @@ questions3 = [
         'answer': 'Self-healing applications can automatically detect and fix issues, reducing downtime and manual intervention'
     },
     {
-        'question': 'What steps would you take to future-proof the applications your team supports against evolving technology landscapes?',
+        'question': '34. What steps would you take to future-proof the applications your team supports against evolving technology landscapes?',
         'options': [
             'Ignore the changing technology landscape',
             'Stick to outdated technologies to avoid changes',
@@ -1109,7 +1099,7 @@ questions3 = [
         'answer': 'Future-proofing involves using flexible architectures, staying informed about technology trends, and planning for scalability'
     },
     {
-        'question': 'How do you handle a situation where you discover a vulnerability in a supported application that could potentially compromise user data?',
+        'question': '35. How do you handle a situation where you discover a vulnerability in a supported application that could potentially compromise user data?',
         'options': [
             'Ignore the vulnerability and hope no one finds out',
             'Share the vulnerability on social media',
@@ -1119,27 +1109,7 @@ questions3 = [
         'answer': 'Report the vulnerability to the appropriate channels within the organization to ensure a timely fix'
     },
     {
-        'question': 'Describe your approach to maintaining confidentiality when dealing with sensitive user information.',
-        'options': [
-            'Share sensitive user information publicly',
-            'Sell sensitive user information for profit',
-            'Handle sensitive user information in compliance with data protection regulations and organizational policies',
-            'Confidentiality is not important when dealing with user information'
-        ],
-        'answer': 'Handle sensitive user information in compliance with data protection regulations and organizational policies'
-    },
-    {
-        'question': 'How would you address a situation where a team member is not adhering to ethical guidelines in their work?',
-        'options': [
-            'Ignore the ethical violation and hope it doesn\'t cause problems',
-            'Join the team member in violating ethical guidelines',
-            'Address ethical violations through open communication, coaching, and enforcing ethical guidelines',
-            'Blame other team members for the ethical violation'
-        ],
-        'answer': 'Address ethical violations through open communication, coaching, and enforcing ethical guidelines'
-    },
-    {
-        'question': 'Explain the importance of providing honest and transparent information to stakeholders, even in challenging situations.',
+        'question': '36. Explain the importance of providing honest and transparent information to stakeholders, even in challenging situations.',
         'options': [
             'Stakeholders prefer being kept in the dark',
             'Honesty and transparency are irrelevant to stakeholders',
@@ -1149,7 +1119,7 @@ questions3 = [
         'answer': 'Transparent communication builds trust and maintains credibility, even when facing challenging situations'
     },
     {
-        'question': 'Describe a scenario where you had to make a decision that balanced the interests of the organization, users, and ethical considerations.',
+        'question': '37. Describe a scenario where you had to make a decision that balanced the interests of the organization, users, and ethical considerations.',
         'options': [
             'I never had to make such a decision',
             'I always prioritize the organization\'s interests above all else',
@@ -1162,173 +1132,163 @@ questions3 = [
 
 questions4 = [
     {
-        'question': 'In applications support, what is the purpose of "vulnerability assessment"?',
-        'options': ['Assessing the vulnerability of support agents', 'Identifying security weaknesses in applications and systems', 'Assessing the vulnerability of office plants', 'Assessing the vulnerability of company picnics'],
+        'question': '1. In applications support, what is the purpose of "vulnerability assessment"?',
+        'options': ['Assessing the vulnerability of support agents', 'Identifying security weaknesses in applications and systems', 'Assessing the vulnerability of office furniture', 'Assessing the vulnerability of company cars'],
         'answer': 'Identifying security weaknesses in applications and systems'
     },
     {
-        'question': 'Which practice involves integrating development and IT operations to achieve faster and more reliable software delivery?',
+        'question': '2. Which practice involves integrating development and IT operations to achieve faster and more reliable software delivery?',
         'options': ['Lone Wolf Approach', 'Waterfall Methodology', 'Agile Transformation', 'DevOps'],
         'answer': 'DevOps'
     },
     {
-        'question': 'In applications support, what is the purpose of a "root cause analysis"?',
-        'options': ['Digging for roots', 'Identifying the underlying cause of incidents or issues', 'Growing plants', 'Creating new issues'],
+        'question': '3. In applications support, what is the purpose of a "root cause analysis"?',
+        'options': ['Digging for roots', 'Identifying the underlying cause of incidents or issues', 'User analysis', 'Creating new issues'],
         'answer': 'Identifying the underlying cause of incidents or issues'
     },
     {
-        'question': 'Which approach involves managing and prioritizing tasks based on their business value?',
+        'question': '4. Which approach involves managing and prioritizing tasks based on their business value?',
         'options': ['FIFO (First-In, First-Out)', 'LIFO (Last-In, First-Out)', 'Value-based Prioritization', 'Alphabetical Ordering'],
         'answer': 'Value-based Prioritization'
     },
     {
-        'question': 'In applications support, what is the purpose of a "security incident response plan"?',
-        'options': ['Responding to the security of social events', 'Defining steps to address security breaches and incidents', 'Responding to the security of virtual reality', 'Creating security incidents for fun'],
+        'question': '5. In applications support, what is the purpose of a "security incident response plan"?',
+        'options': ['Responding to the security of social events', 'Defining steps to address security breaches and incidents', 'Responding to the security of virtual environments', 'Creating security incidents for practice'],
         'answer': 'Defining steps to address security breaches and incidents'
     },
     {
-        'question': 'Which practice involves continuous iteration and improvement of processes and products?',
+        'question': '6. Which practice involves continuous iteration and improvement of processes and products?',
         'options': ['Stagnation Strategy', 'Set-and-Forget Approach', 'Agile Methodology', 'Static Workflow'],
         'answer': 'Agile Methodology'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "communication plan"?',
+        'question': '7. In the context of support, what is the purpose of a "communication plan"?',
         'options': ['Planning daily communication meetings', 'Defining how and when to communicate with stakeholders', 'Planning a secret surprise party', 'Planning a communication-free day'],
         'answer': 'Defining how and when to communicate with stakeholders'
     },
     {
-        'question': 'Which approach involves addressing user feedback and adapting software accordingly?',
+        'question': '8. Which approach involves addressing user feedback and adapting software accordingly?',
         'options': ['Ignore User Feedback', 'User-Centric Development', 'Feedback Elimination Strategy', 'Disregard User Needs'],
         'answer': 'User-Centric Development'
     },
     {
-        'question': 'In applications support, what is the purpose of "change management"?',
-        'options': ['Resisting change at all costs', 'Managing pocket change', 'Managing and controlling changes to applications or systems', 'Managing fashion trends'],
+        'question': '9. In applications support, what is the purpose of "change management"?',
+        'options': ['Resisting change at all costs', 'Managing pocket change', 'Managing and controlling changes to applications or systems', 'Managing bugs in software'],
         'answer': 'Managing and controlling changes to applications or systems'
     },
     {
-        'question': 'Which practice involves automating the deployment process to ensure consistency and reliability?',
+        'question': '10. Which practice involves automating the deployment process to ensure consistency and reliability?',
         'options': ['Manual Deployment', 'Chaotic Deployment', 'Automated Deployment', 'Random Deployment'],
         'answer': 'Automated Deployment'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "stakeholder matrix"?',
-        'options': ['Creating a matrix for math enthusiasts', 'Identifying and analyzing stakeholders and their interests', 'Creating a matrix for superheroes', 'Creating a matrix for board games'],
-        'answer': 'Identifying and analyzing stakeholders and their interests'
-    },
-    {
-        'question': 'Which approach involves developing software in short cycles with frequent collaboration and feedback?',
+        'question': '11. Which approach involves developing software in short cycles with frequent collaboration and feedback?',
         'options': ['Long Cycle Development', 'Waterfall Methodology', 'Agile Development', 'Marathon Development'],
         'answer': 'Agile Development'
     },
     {
-        'question': 'In applications support, what is the purpose of "penetration testing"?',
+        'question': '12. In applications support, what is the purpose of "penetration testing"?',
         'options': ['Testing pens for writing quality', 'Testing the durability of pens', 'Testing applications for security vulnerabilities by simulating attacks', 'Testing pens for artistic capabilities'],
         'answer': 'Testing applications for security vulnerabilities by simulating attacks'
     },
     {
-        'question': 'Which practice involves cross-functional teams working together to develop and deliver software?',
+        'question': '13. Which practice involves cross-functional teams working together to develop and deliver software?',
         'options': ['Solo Development', 'Individual Silos', 'Cross-Functional Collaboration', 'Separate Department Development'],
         'answer': 'Cross-Functional Collaboration'
     },
     {
-        'question': 'In applications support, what is the purpose of "incident communication"?',
-        'options': ['Communicating incidents through interpretive dance', 'Communicating incidents to a small group of friends', 'Effectively communicating incidents to stakeholders and users', 'Communicating incidents to distant galaxies'],
+        'question': '14. In applications support, what is the purpose of "incident communication"?',
+        'options': ['Communicating incidents through emails', 'Communicating incidents to a small group of people', 'Effectively communicating incidents to stakeholders and users', 'Communicating incidents to distant departments'],
         'answer': 'Effectively communicating incidents to stakeholders and users'
     },
     {
-        'question': 'Which practice involves automating the testing of software changes to ensure they don’t break existing functionality?',
+        'question': '15. Which practice involves automating the testing of software changes to ensure they don’t break existing functionality?',
         'options': ['Manual Testing', 'Automated Testing', 'Random Testing', 'Boring Testing'],
         'answer': 'Automated Testing'
     },
     {
-        'question': 'In the context of support, what is the purpose of "user acceptance testing"?',
-        'options': ['Testing users for their acceptance of support agents', 'Testing the acceptance of new features or changes by users before deployment', 'Testing user tolerance levels', 'Testing users for their love of tacos'],
+        'question': '16. In the context of support, what is the purpose of "user acceptance testing"?',
+        'options': ['Testing users for their acceptance of support agents', 'Testing the acceptance of new features or changes by users before deployment', 'Testing user tolerance levels', 'Testing users response time'],
         'answer': 'Testing the acceptance of new features or changes by users before deployment'
     },
     {
-        'question': 'Which approach involves creating a culture of collaboration between development and operations teams?',
-        'options': ['Silo Culture', 'Culture of Blame', 'DevOps Culture', 'Isolation Culture'],
+        'question': '17. Which approach involves creating a culture of collaboration between development and operations teams?',
+        'options': ['Silo Culture', 'No Blame Culture', 'DevOps Culture', 'Team Isolation Culture'],
         'answer': 'DevOps Culture'
     },
     {
-        'question': 'In applications support, what is the purpose of a "risk assessment"?',
-        'options': ['Assessing the risk of going on vacation', 'Identifying and evaluating potential risks to applications and systems', 'Assessing the risk of eating ice cream', 'Assessing the risk of trying a new hairstyle'],
+        'question': '18. In applications support, what is the purpose of a "risk assessment"?',
+        'options': ['Assessing the risk of going on to the office', 'Identifying and evaluating potential risks to applications and systems', 'Assessing the risk of natural disasters', 'Assessing the risk of hackers'],
         'answer': 'Identifying and evaluating potential risks to applications and systems'
     },
     {
-        'question': 'Which practice involves continuous integration and delivery of software changes to ensure stability and fast delivery?',
+        'question': '19. Which practice involves continuous integration and delivery of software changes to ensure stability and fast delivery?',
         'options': ['Static Integration and Delivery', 'Occasional Integration and Delivery', 'Continuous Integration and Continuous Delivery (CI/CD)', 'Disconnected Integration and Delivery'],
         'answer': 'Continuous Integration and Continuous Delivery (CI/CD)'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "stakeholder engagement plan"?',
-        'options': ['Engaging stakeholders in a dance-off', 'Planning how to engage and involve stakeholders throughout a project', 'Planning a stakeholder party', 'Planning a stakeholder hibernation plan'],
+        'question': '20. In the context of support, what is the purpose of a "stakeholder engagement plan"?',
+        'options': ['Engaging stakeholders in coding', 'Planning how to engage and involve stakeholders throughout a project', 'Planning stakeholder documentation', 'Planning a stakeholder plan'],
         'answer': 'Planning how to engage and involve stakeholders throughout a project'
     },
     {
-        'question': 'Which approach involves addressing both functional and non-functional requirements in software development?',
-        'options': ['Functional Requirements Focus', 'One-sided Requirements Approach', 'Holistic Requirements Approach', 'Functional-only Requirements Approach'],
+        'question': '21. Which approach involves addressing both functional and non-functional requirements in software development?',
+        'options': ['Functional Requirements Focus', 'Holistic Requirements Approach', 'One-sided Requirements Approach', 'Comprehensive Specifications Method'],
         'answer': 'Holistic Requirements Approach'
     },
     {
-        'question': 'In applications support, what is the purpose of "continuous monitoring"?',
-        'options': ['Monitoring occasionally', 'Monitoring only on Mondays', 'Continuous tracking and observation of applications to ensure performance and security', 'Monitoring every leap year'],
+        'question': '22. In applications support, what is the purpose of "continuous monitoring"?',
+        'options': ['Continuous tracking and observation of applications to ensure performance and security', 'Monitoring occasionally', 'Monitoring only on weekdays', 'Periodic Performance Oversight'],
         'answer': 'Continuous tracking and observation of applications to ensure performance and security'
     },
     {
-        'question': 'Which practice involves addressing security throughout the software development lifecycle?',
-        'options': ['Security as an Afterthought', 'Secure Development Lifecycle (SDL)', 'Security as a Bonus', 'Security as a Side Project'],
+        'question': '23. Which practice involves addressing security throughout the software development lifecycle?',
+        'options': ['Secure Development Lifecycle (SDL)', 'Security as a Bonus', 'Security as an Afterthought', 'Inclusive Security Integration'],
         'answer': 'Secure Development Lifecycle (SDL)'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "stakeholder communication plan"?',
-        'options': ['Planning daily stakeholder communication', 'Planning how to communicate with stakeholders to keep them informed and engaged', 'Planning a stakeholder silent retreat', 'Planning a stakeholder disguise plan'],
+        'question': '24. In the context of support, what is the purpose of a "stakeholder communication plan"?',
+        'options': ['Planning how to communicate with stakeholders to keep them informed and engaged', 'Planning daily stakeholder communication', 'Planning a stakeholder silent retreat', 'Stakeholder Isolation Strategy'],
         'answer': 'Planning how to communicate with stakeholders to keep them informed and engaged'
     },
     {
-        'question': 'Which approach involves involving stakeholders early and frequently throughout a project?',
-        'options': ['Stakeholder Neglect Approach', 'Stakeholder Involvement Approach', 'Stakeholder Isolation Approach', 'Stakeholder Avoidance Approach'],
-        'answer': 'Stakeholder Involvement Approach'
-    },
-    {
-        'question': 'In applications support, what is the purpose of a "security audit"?',
-        'options': ['Auditing security guards', 'Auditing the security of online accounts', 'Systematically evaluating the security measures of applications and systems', 'Auditing the security of recipes'],
+        'question': '25. In applications support, what is the purpose of a "security audit"?',
+        'options': ['Systematically evaluating the security measures of applications and systems', 'Auditing the security of online accounts', 'Auditing the security of recipes', 'Security Enhancement Evaluation'],
         'answer': 'Systematically evaluating the security measures of applications and systems'
     },
     {
-        'question': 'Which practice involves delivering small, incremental changes to software frequently?',
-        'options': ['Big Bang Deployment', 'Incremental Deployment', 'One-time Deployment', 'Huge Release Deployment'],
+        'question': '26. Which practice involves delivering small, incremental changes to software frequently?',
+        'options': ['Incremental Deployment', 'One-time Deployment', 'Big Bang Deployment', 'Gradual Feature Integration'],
         'answer': 'Incremental Deployment'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "stakeholder influence assessment"?',
-        'options': ['Assessing stakeholder influence in elections', 'Assessing and analyzing the influence and impact of stakeholders on a project', 'Assessing influence of random people', 'Assessing influence of pets'],
+        'question': '27. In the context of support, what is the purpose of a "stakeholder influence assessment"?',
+        'options': ['Assessing and analyzing the influence and impact of stakeholders on a project', 'Assessing influence of random people', 'Assessing influence of politics', 'Influence Evaluation Survey'],
         'answer': 'Assessing and analyzing the influence and impact of stakeholders on a project'
     },
     {
-        'question': 'Which practice involves planning and executing work in small, time-boxed iterations?',
-        'options': ['Long-term Planning', 'Sprint Planning', 'Marathon Planning', 'No Planning'],
+        'question': '28. Which practice involves planning and executing work in small, time-boxed iterations?',
+        'options': ['Sprint Planning', 'Long-term Planning', 'Marathon Planning', 'Incremental Planning'],
         'answer': 'Sprint Planning'
     },
     {
-        'question': 'In applications support, what is the purpose of a "security incident report"?',
-        'options': ['Reporting incidents involving security guards', 'Reporting incidents involving online accounts', 'Documenting and analyzing security incidents to prevent future occurrences', 'Reporting incidents involving food'],
+        'question': '29. In applications support, what is the purpose of a "security incident report"?',
+        'options': ['Documenting and analyzing security incidents to prevent future occurrences', 'Reporting incidents involving online accounts', 'Reporting incidents involving food', 'Security Incident Documentation'],
         'answer': 'Documenting and analyzing security incidents to prevent future occurrences'
     },
     {
-        'question': 'Which practice involves collaboration between development and operations teams throughout the software lifecycle?',
-        'options': ['Isolation of Development and Operations', 'DevOps Collaboration', 'Development-Only Approach', 'Operations-Only Approach'],
+        'question': '30. Which practice involves collaboration between development and operations teams throughout the software lifecycle?',
+        'options': ['DevOps Collaboration', 'Isolation of Development and Operations', 'Development-Only Approach', 'Cooperative Development Model'],
         'answer': 'DevOps Collaboration'
     },
     {
-        'question': 'In the context of support, what is the purpose of a "stakeholder mapping"?',
-        'options': ['Creating a map for treasure hunting', 'Identifying and visualizing stakeholders and their relationships', 'Creating a map for space travel', 'Creating a map for underwater exploration'],
+        'question': '31. In the context of support, what is the purpose of a "stakeholder mapping"?',
+        'options': ['Identifying and visualizing stakeholders and their relationships', 'Creating a map for treasure hunting', 'Creating a map for space travel', 'Relationship Diagram Development'],
         'answer': 'Identifying and visualizing stakeholders and their relationships'
     },
     {
-        'question': 'Which approach involves releasing small, frequent updates to applications to minimize risk and improve reliability?',
-        'options': ['Big Bang Release', 'Frequent Release', 'Infrequent Release', 'No Release'],
+        'question': '32. Which approach involves releasing small, frequent updates to applications to minimize risk and improve reliability?',
+        'options': ['Frequent Release', 'Big Bang Release', 'Infrequent Release', 'Staggered Release Strategy'],
         'answer': 'Frequent Release'
     }
 ]
